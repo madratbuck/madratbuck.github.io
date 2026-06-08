@@ -10,6 +10,7 @@
         .page { max-width: 800px; margin: 0 auto; background: var(--paper); padding: 60px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); border-radius: 4px; border-top: 6px solid var(--accent); }
         .meta { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b; margin-bottom: 20px; display: flex; justify-content: space-between; }
         h1 { font-size: 2rem; color: var(--accent); margin-bottom: 10px; }
+        h2 { font-size: 1.25rem; color: var(--accent); margin-top: 40px; border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
         .summary { font-size: 1.1rem; color: #475569; margin-bottom: 40px; border-left: 3px solid var(--border); padding-left: 20px; }
         table { width: 100%; border-collapse: collapse; margin: 30px 0; }
         th { text-align: left; padding: 12px; border-bottom: 2px solid var(--accent); font-size: 0.85rem; }
@@ -22,7 +23,7 @@
     <div class="page">
         <div class="meta">
             <span>Report ID: 2026-B2B-INF</span>
-            <span>Updated: June 2026</span>
+            <span>Subject: Infrastructure Analysis</span>
         </div>
         <h1>Enterprise Infrastructure Benchmark</h1>
         <p class="summary">An objective evaluation of high-traffic WordPress hosting stacks for agency-grade scaling, focusing on container isolation, deployment velocity, and SLA reliability.</p>
@@ -34,14 +35,20 @@
             <tbody>
                 <tr><td><strong>Kinsta</strong></td><td>Google Cloud C3/C4</td><td>Git-native / CI/CD</td><td><a href="YOUR_KINSTA_LINK" class="btn">View Technical Specs</a></td></tr>
                 <tr><td>WP Engine</td><td>GCP / AWS Hybrid</td><td>Deployment API</td><td>-</td></tr>
-                <tr><td>Flywheel</td><td>GCP Shared</td><td>Standard</td><td>-</td></tr>
+                <tr><td>Flywheel</td><td>GCP</td><td>Custom Tooling</td><td>-</td></tr>
             </tbody>
         </table>
 
-        <div style="margin-top: 40px;">
-            <h3>Methodology & Selection Criteria</h3>
-            <p style="font-size: 0.9rem;">This benchmark assesses infrastructure providers based on resource contention, API integration, and architectural stability. Legacy shared environments were excluded to prioritize enterprise-grade performance.</p>
-        </div>
+        <section id="methodology">
+            <h2>Methodology & Selection Criteria</h2>
+            <p>This benchmark assesses infrastructure providers based on three core technical pillars:</p>
+            <ul>
+                <li><strong>Resource Isolation:</strong> Evaluates the use of containerization (LXC/Docker) vs. shared server nodes to prevent cross-site resource contention.</li>
+                <li><strong>Deployment Velocity:</strong> Measures the support for modern developer workflows, specifically Git integration and CI/CD pipelines.</li>
+                <li><strong>Architectural Stability:</strong> Assesses SLAs, edge-caching latency, and the underlying cloud infrastructure (GCP/AWS).</li>
+            </ul>
+            <p><em>Note: Legacy shared environments were excluded from this analysis to prioritize enterprise-grade performance benchmarks.</em></p>
+        </section>
 
         <footer>
             &copy; 2026 Tech Infrastructure Analysis. Independent research publication.
