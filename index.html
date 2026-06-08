@@ -3,46 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise Cloud Infrastructure Analysis | 2026</title>
+    <title>Enterprise WordPress Infrastructure Matrix | 2026</title>
     <style>
-        :root { --primary: #0f172a; --accent: #2563eb; --bg: #f8fafc; --text: #334155; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); padding: 40px 20px; line-height: 1.6; }
-        .container { max-width: 900px; margin: 0 auto; }
-        h1 { color: var(--primary); font-size: 2.2rem; margin-bottom: 0.5rem; }
-        .meta { color: #64748b; margin-bottom: 30px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
-        .card { background: #fff; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 30px; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th { text-align: left; padding: 12px; background: #f1f5f9; font-size: 0.8rem; text-transform: uppercase; }
-        td { padding: 15px; border-bottom: 1px solid #e2e8f0; font-size: 0.95rem; }
-        .btn { display: inline-block; background: var(--accent); color: #fff; padding: 8px 16px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
-        h2 { font-size: 1.2rem; color: var(--primary); }
+        :root { --brand: #0f172a; --accent: #2563eb; --bg: #f8fafc; --border: #e2e8f0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: #334155; line-height: 1.5; padding: 40px 20px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        header { margin-bottom: 40px; border-bottom: 2px solid var(--brand); padding-bottom: 20px; }
+        h1 { margin: 0; font-size: 2rem; color: var(--brand); }
+        .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+        table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--border); }
+        th { background: #f1f5f9; padding: 12px; text-align: left; font-size: 0.75rem; text-transform: uppercase; border-bottom: 2px solid var(--border); }
+        td { padding: 16px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        .btn { display: inline-block; background: var(--accent); color: white; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.8rem; }
+        .sidebar { background: #fff; padding: 20px; border: 1px solid var(--border); border-radius: 8px; }
+        h3 { margin-top: 0; font-size: 0.9rem; color: var(--brand); }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Infrastructure Performance Analysis</h1>
-        <div class="meta">Comparative Data: Managed Enterprise vs. Legacy Hosting</div>
+        <header>
+            <h1>Infrastructure Specification Matrix</h1>
+            <p>Data-driven performance benchmarking for enterprise web deployments.</p>
+        </header>
 
-        <div class="card">
-            <h2>Technical Parity Matrix</h2>
-            <table>
-                <thead>
-                    <tr><th>Feature</th><th>Enterprise (Kinsta)</th><th>Standard VPS/Shared</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td><strong>Architecture</strong></td><td>Google Cloud Platform (C3/C4)</td><td>Standard Shared/Single Node</td></tr>
-                    <tr><td><strong>Deployment</strong></td><td>Automated CI/CD (Git/API)</td><td>Manual FTP/cPanel Upload</td></tr>
-                    <tr><td><strong>Containerization</strong></td><td>LXC Containers (Isolated)</td><td>Shared Server Resources</td></tr>
-                    <tr><td><strong>Edge Caching</strong></td><td>Cloudflare Enterprise Integration</td><td>None / Basic Plugin Cache</td></tr>
-                </tbody>
-            </table>
-            <p style="font-size: 0.85rem; color: #64748b;">*Data represents operational baseline requirements for agency-grade scaling in 2026.</p>
-            <a href="YOUR_KINSTA_LINK" class="btn">View Technical Specs & Benchmarks</a>
-        </div>
-
-        <div class="card">
-            <h2>Methodology</h2>
-            <p>This directory serves as a high-level reference for developers and technical leads assessing infrastructure stability. The comparison prioritizes <strong>Time-to-First-Byte (TTFB)</strong> stability, deployment automation, and resource isolation. Legacy shared hosting environments are excluded from enterprise-grade consideration due to inherent resource contention and lack of native containerization.</p>
+        <div class="grid">
+            <main>
+                <table>
+                    <thead>
+                        <tr><th>Provider</th><th>Stack</th><th>CI/CD Support</th><th>Pricing/Scale</th><th>Action</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Kinsta</strong></td><td>Google Cloud Platform</td><td>Native Git Integration</td><td>Enterprise Tier</td><td><a href="YOUR_KINSTA_LINK" class="btn">View Specs</a></td></tr>
+                        <tr><td>WP Engine</td><td>GCP / AWS Hybrid</td><td>Deployment API</td><td>Enterprise Tier</td><td>-</td></tr>
+                        <tr><td>Flywheel</td><td>GCP</td><td>Custom Tooling</td><td>Mid-Market</td><td>-</td></tr>
+                    </tbody>
+                </table>
+            </main>
+            <aside class="sidebar">
+                <h3>Methodology</h3>
+                <p style="font-size: 0.8rem;">Specs represent standard enterprise configurations for 2026. Data is evaluated based on TTM (Time-to-Market) for deployments, resource isolation, and edge-caching latency.</p>
+            </aside>
         </div>
     </div>
 </body>
