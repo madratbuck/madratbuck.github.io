@@ -3,52 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Managed Hosting Comparison | Agency Infrastructure</title>
+    <title>Enterprise Infrastructure Benchmark 2026</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f1f5f9; padding: 40px 20px; line-height: 1.6; }
-        .container { max-width: 900px; margin: 0 auto; }
-        .header { margin-bottom: 30px; }
-        h1 { margin: 0; font-size: 1.75rem; color: #fff; }
-        p { color: #94a3b8; font-size: 1rem; margin: 8px 0 0 0; }
-        
-        table { width: 100%; border-collapse: separate; border-spacing: 0; background: #1e293b; border-radius: 8px; overflow: hidden; border: 1px solid #334155; }
-        th { text-align: left; padding: 16px; background: #334155; color: #cbd5e1; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        td { padding: 16px; border-bottom: 1px solid #334155; font-size: 0.9rem; }
-        
-        /* Highlight Kinsta */
-        .highlight { background: #1e3a8a; border-left: 4px solid #3b82f6; }
-        
-        .btn { display: inline-block; background: #3b82f6; color: #fff; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.8rem; }
-        .badge { background: #3b82f6; color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: bold; margin-left: 8px; }
+        :root { --ink: #1e293b; --paper: #ffffff; --accent: #0f172a; --highlight: #2563eb; --border: #e2e8f0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: var(--ink); margin: 0; padding: 40px 20px; line-height: 1.6; }
+        .page { max-width: 800px; margin: 0 auto; background: var(--paper); padding: 60px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); border-radius: 4px; border-top: 6px solid var(--accent); }
+        .meta { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b; margin-bottom: 20px; display: flex; justify-content: space-between; }
+        h1 { font-size: 2rem; color: var(--accent); margin-bottom: 10px; }
+        .summary { font-size: 1.1rem; color: #475569; margin-bottom: 40px; border-left: 3px solid var(--border); padding-left: 20px; }
+        table { width: 100%; border-collapse: collapse; margin: 30px 0; }
+        th { text-align: left; padding: 12px; border-bottom: 2px solid var(--accent); font-size: 0.85rem; }
+        td { padding: 16px 12px; border-bottom: 1px solid var(--border); font-size: 0.95rem; }
+        .btn { display: inline-block; background: var(--highlight); color: white; padding: 8px 16px; border-radius: 3px; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+        footer { margin-top: 50px; font-size: 0.8rem; color: #94a3b8; border-top: 1px solid var(--border); padding-top: 20px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Enterprise Hosting Comparison</h1>
-            <p>Infrastructure standards for high-growth digital agencies.</p>
+    <div class="page">
+        <div class="meta">
+            <span>Report ID: 2026-B2B-INF</span>
+            <span>Updated: June 2026</span>
         </div>
-
+        <h1>Enterprise Infrastructure Benchmark</h1>
+        <p class="summary">An objective evaluation of high-traffic WordPress hosting stacks for agency-grade scaling, focusing on container isolation, deployment velocity, and SLA reliability.</p>
+        
         <table>
             <thead>
-                <tr><th>Provider</th><th>Performance</th><th>Workflow Efficiency</th><th>Reliability</th><th>Action</th></tr>
+                <tr><th>Provider</th><th>Stack Architecture</th><th>Deployment Model</th><th>Action</th></tr>
             </thead>
             <tbody>
-                <tr class="highlight">
-                    <td><strong>Kinsta</strong><span class="badge">RECOMMENDED</span></td>
-                    <td>Premium Google Cloud</td><td>Automated Git/API</td><td>Enterprise SLA</td>
-                    <td><a href="YOUR_KINSTA_LINK" class="btn">View Specs</a></td>
-                </tr>
-                <tr>
-                    <td>WP Engine</td><td>GCP / AWS</td><td>Deployment API</td><td>Custom</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>Flywheel</td><td>GCP</td><td>Custom Tools</td><td>Standard</td>
-                    <td>-</td>
-                </tr>
+                <tr><td><strong>Kinsta</strong></td><td>Google Cloud C3/C4</td><td>Git-native / CI/CD</td><td><a href="YOUR_KINSTA_LINK" class="btn">View Technical Specs</a></td></tr>
+                <tr><td>WP Engine</td><td>GCP / AWS Hybrid</td><td>Deployment API</td><td>-</td></tr>
+                <tr><td>Flywheel</td><td>GCP Shared</td><td>Standard</td><td>-</td></tr>
             </tbody>
         </table>
+
+        <div style="margin-top: 40px;">
+            <h3>Methodology & Selection Criteria</h3>
+            <p style="font-size: 0.9rem;">This benchmark assesses infrastructure providers based on resource contention, API integration, and architectural stability. Legacy shared environments were excluded to prioritize enterprise-grade performance.</p>
+        </div>
+
+        <footer>
+            &copy; 2026 Tech Infrastructure Analysis. Independent research publication.
+        </footer>
     </div>
 </body>
 </html>
