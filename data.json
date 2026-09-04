@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-04T18:50:46Z",
+  "updated_at": "2026-09-04T20:12:17Z",
   "shopify": {
-    "sessions_30d": 83,
+    "sessions_30d": 84,
     "conversion_rate_30d": 0,
     "orders_alltime": 0,
     "currency": "CAD",
@@ -58,18 +58,9 @@
   },
   "traffic": {
     "sessions_by_source_30d": [
-      {
-        "source": "direct",
-        "sessions": 60
-      },
-      {
-        "source": "social",
-        "sessions": 16
-      },
-      {
-        "source": "search",
-        "sessions": 7
-      }
+      { "source": "direct", "sessions": 60 },
+      { "source": "social", "sessions": 17 },
+      { "source": "search", "sessions": 7 }
     ]
   },
   "ads": {
@@ -110,12 +101,40 @@
     "ad_spend_30d": 4.35,
     "payment_fees_est_30d": 0.0,
     "net_profit_est_30d": -4.35,
-    "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
+    "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order. Ad figures carried forward from the prior refresh since the Meta Ads Manager page didn't finish loading rows in this run."
   },
   "mail": {
-    "unread_count": 4,
-    "total_30d": 7,
+    "unread_count": 6,
+    "total_30d": 11,
     "messages": [
+      {
+        "date": "2026-09-04T15:00:23Z",
+        "source": "Klaviyo",
+        "subject": "You ask, we deliver 🚀",
+        "snippet": "See how Klaviyo's constant improvements help you meet your goals.",
+        "unread": true
+      },
+      {
+        "date": "2026-09-04T13:45:07Z",
+        "source": "Klaviyo",
+        "subject": "You hit your first milestone",
+        "snippet": "You're officially a Klaviyo creator.",
+        "unread": false
+      },
+      {
+        "date": "2026-09-04T12:31:18Z",
+        "source": "Klaviyo",
+        "subject": "Your toll-free number has been verified!",
+        "snippet": "Klaviyo Crownstitch can now use your toll-free number. Your toll-free number is now verified and ready for sending.",
+        "unread": true
+      },
+      {
+        "date": "2026-09-04T00:48:54Z",
+        "source": "Meta",
+        "subject": "Your Meta ads receipt (Account ID: 1041318392007265)",
+        "snippet": "This is not an invoice. Transaction for Crownstitch (1041318392007265), Transaction ID 28299046983112580-28162769996740282.",
+        "unread": false
+      },
       {
         "date": "2026-09-03T03:54:16Z",
         "source": "Customer",
@@ -142,31 +161,10 @@
         "source": "Klaviyo",
         "subject": "Your toll-free number needs carrier verification",
         "snippet": "Expect a 3–5 business day wait — here's what to do in the meantime.",
-        "unread": false
-      },
-      {
-        "date": "2026-09-02T23:52:49Z",
-        "source": "Klaviyo",
-        "subject": "Set up your shiny new Klaviyo account",
-        "snippet": "Your journey to smarter marketing starts now.",
-        "unread": true
-      },
-      {
-        "date": "2026-09-02T23:42:49Z",
-        "source": "Klaviyo",
-        "subject": "Confirm your Klaviyo email",
-        "snippet": "In order to finish setting up your account, please confirm your email.",
-        "unread": false
-      },
-      {
-        "date": "2026-08-19T13:00:24Z",
-        "source": "Shopify",
-        "subject": "💬 Help us improve Shopify",
-        "snippet": "A short survey to help improve tools for Shopify merchants.",
         "unread": true
       }
     ],
-    "last_check_status": "gmail_unavailable",
-    "last_check_at": "2026-09-04T18:50:27Z"
+    "last_check_status": "ok",
+    "last_check_at": "2026-09-04T20:12:17Z"
   }
 }
