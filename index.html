@@ -181,7 +181,7 @@
   /* ---------- KPI strip ---------- */
   .kpis{
     display:grid;
-    grid-template-columns:repeat(6,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
     gap:12px;
     margin-bottom:28px;
   }
@@ -216,10 +216,17 @@
   /* ---------- panel grid ---------- */
   .panels{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
     gap:16px;
     margin-bottom:16px;
   }
+  .src-row{ margin-bottom:11px; }
+  .src-row:last-child{ margin-bottom:0; }
+  .src-row-label{ display:flex; justify-content:space-between; align-items:baseline; font-size:12.5px; margin-bottom:5px; }
+  .src-row-label .src-name{ text-transform:capitalize; color:var(--text-2); }
+  .src-row-label .src-count{ font-family:'IBM Plex Mono',monospace; font-weight:600; font-variant-numeric:tabular-nums; }
+  .src-bar-track{ height:7px; border-radius:4px; background:var(--surface-2); overflow:hidden; }
+  .src-bar-fill{ height:100%; border-radius:4px; background:var(--accent); }
   .panel{
     background:var(--surface);
     border:1px solid var(--border);
@@ -451,6 +458,9 @@
     color:var(--text-2);
   }
 
+  @media (max-width: 1100px){
+    .panels{ grid-template-columns:repeat(2,1fr); }
+  }
   @media (max-width: 920px){
     .kpis{ grid-template-columns:repeat(2,1fr); }
     .panels{ grid-template-columns:1fr; }
@@ -495,17 +505,27 @@
     <div class="kpi"><div class="label">Ad spend · lifetime</div><div class="value" id="kpi-spend">—</div><div class="sub">Meta, this campaign</div></div>
     <div class="kpi"><div class="label">Daily budget</div><div class="value" id="kpi-budget">—</div><div class="sub">Advantage+ campaign</div></div>
     <div class="kpi"><div class="label">Unread mail</div><div class="value" id="kpi-mail-unread">—</div><div class="sub">info@crownstitch.store</div></div>
+    <div class="kpi"><div class="label">Est. net profit · 30d</div><div class="value" id="kpi-profit">—</div><div class="sub">Revenue − COGS − ads − fees</div></div>
   </div>
 
   <div class="panels">
 
     <div class="panel">
-      <div class="panel-head"><h2>Sales &amp; traffic</h2><span class="icon">SHOPIFY</span></div>
+      <div class="panel-head"><h2>Sales</h2><span class="icon">SHOPIFY</span></div>
       <div class="row"><span class="k">Sessions (30d)</span><span class="v" id="s-sessions">—</span></div>
       <div class="row"><span class="k">Conversion rate (30d)</span><span class="v" id="s-cvr">—</span></div>
       <div class="row"><span class="k">Orders (all-time)</span><span class="v" id="s-orders">—</span></div>
       <div class="row"><span class="k">Active discount</span><span class="v" id="s-discount">—</span></div>
+      <div class="row"><span class="k">WELCOME15 redemptions</span><span class="v" id="s-redemptions">—</span></div>
       <div class="panel-note" id="s-note">Store is indexed and live, but hasn't converted a visitor yet — the ad campaign and email flows below are the current push to change that.</div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h2>Traffic sources</h2><span class="icon">30D</span></div>
+      <div id="traffic-list">
+        <div class="src-row"><div class="src-row-label"><span class="src-name">—</span><span class="src-count">—</span></div><div class="src-bar-track"><div class="src-bar-fill" style="width:0%"></div></div></div>
+      </div>
+      <div class="panel-note" id="t-note">Where the 30-day sessions above are coming from.</div>
     </div>
 
     <div class="panel">
@@ -564,6 +584,25 @@
   </div>
 
   <div class="ledger">
+    <div class="panel-head"><h2>Profitability</h2><span class="icon">ESTIMATE · 30D</span></div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Revenue</th><th>Est. COGS</th><th>Ad spend</th><th>Est. payment fees</th><th>Est. net profit</th></tr>
+        </thead>
+        <tbody id="profit-row">
+          <tr><td colspan="5">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="econ-stats">
+      <div><div class="stat-value" id="profit-net">—</div><div class="stat-label">Est. net profit (30d)</div></div>
+      <div><div class="stat-value" id="profit-orders">—</div><div class="stat-label">Orders (30d)</div></div>
+    </div>
+    <div class="panel-note" id="profit-note">All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost above (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order.</div>
+  </div>
+
+  <div class="ledger">
     <div class="panel-head"><h2>Business inbox</h2><span class="icon">INFO@CROWNSTITCH.STORE</span></div>
     <div class="inbox-stats">
       <div><div class="stat-value" id="mail-unread">—</div><div class="stat-label">Unread</div></div>
@@ -597,6 +636,12 @@
     "currency": "CAD",
     "discount_code": "WELCOME15",
     "discount_active": true,
+    "discount_redemptions_alltime": 0,
+    "refunds": {
+      "total_refunded_alltime": 0,
+      "refunded_orders": []
+    },
+    "stuck_fulfillment_orders": [],
     "products": [
       {
         "title": "Crownstitch Groundhog Classic Embroidered Rope Hat",
@@ -640,6 +685,13 @@
       }
     ]
   },
+  "traffic": {
+    "sessions_by_source_30d": [
+      { "source": "direct", "sessions": 57 },
+      { "source": "social", "sessions": 11 },
+      { "source": "search", "sessions": 7 }
+    ]
+  },
   "ads": {
     "campaign_name": "Crownstitch - Advantage+ Shopping",
     "campaign_status": "Active",
@@ -650,7 +702,8 @@
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
-    "review_status": "Approved"
+    "review_status": "Approved",
+    "last_spend_change_at": "2026-09-03T23:44:29Z"
   },
   "klaviyo": {
     "flows": [
@@ -658,15 +711,26 @@
         "name": "Welcome Series",
         "status": "live",
         "recipients_30d": 0,
+        "revenue_30d": 0,
         "note": "Triggers on signup"
       },
       {
         "name": "Abandoned Checkout Reminder",
         "status": "live",
         "recipients_30d": 0,
+        "revenue_30d": 0,
         "note": "Triggers on abandoned checkout"
       }
     ]
+  },
+  "profit": {
+    "revenue_30d": 0,
+    "orders_30d": 0,
+    "cogs_est_30d": 0,
+    "ad_spend_30d": 2.61,
+    "payment_fees_est_30d": 0,
+    "net_profit_est_30d": -2.61,
+    "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
     "unread_count": 4,
@@ -779,14 +843,40 @@
     document.getElementById('kpi-spend').textContent = money(d.ads && d.ads.amount_spent_lifetime, d.ads && d.ads.currency);
     document.getElementById('kpi-budget').textContent = money(d.ads && d.ads.daily_budget, d.ads && d.ads.currency) + '/day';
     document.getElementById('kpi-mail-unread').textContent = (d.mail && d.mail.unread_count) ?? "—";
+    const pr = d.profit || {};
+    document.getElementById('kpi-profit').textContent = typeof pr.net_profit_est_30d === 'number' ? money(pr.net_profit_est_30d, sh.currency) : "—";
 
     // Sales panel
     document.getElementById('s-sessions').textContent = sh.sessions_30d ?? "—";
     document.getElementById('s-cvr').textContent = pct(sh.conversion_rate_30d);
     document.getElementById('s-orders').textContent = sh.orders_alltime ?? "—";
     document.getElementById('s-discount').textContent = sh.discount_active ? (sh.discount_code + " · live") : "None active";
-    if (sh.orders_alltime > 0) {
+    document.getElementById('s-redemptions').textContent = sh.discount_redemptions_alltime ?? 0;
+    const refundedOrders = (sh.refunds && sh.refunds.refunded_orders) || [];
+    const stuckOrders = sh.stuck_fulfillment_orders || [];
+    if (stuckOrders.length > 0) {
+      document.getElementById('s-note').textContent = stuckOrders.length + " order(s) have sat unfulfilled for 3+ days: " + stuckOrders.map(o => o.order_name).join(", ") + " — worth a check in Shopify admin.";
+    } else if (refundedOrders.length > 0) {
+      document.getElementById('s-note').textContent = refundedOrders.length + " order(s) have a refund on file (total " + money((sh.refunds && sh.refunds.total_refunded_alltime) || 0, sh.currency) + ") — see Shopify admin for details.";
+    } else if (sh.orders_alltime > 0) {
       document.getElementById('s-note').textContent = "The store has recorded real orders — check Shopify admin for fulfillment status.";
+    }
+
+    // Traffic sources
+    const trafficList = document.getElementById('traffic-list');
+    const sources = (d.traffic && d.traffic.sessions_by_source_30d) || [];
+    trafficList.innerHTML = '';
+    if (sources.length === 0) {
+      trafficList.innerHTML = '<div class="src-row"><div class="src-row-label"><span class="src-name">No session data yet</span></div></div>';
+    } else {
+      const maxSessions = Math.max(...sources.map(s => s.sessions || 0), 1);
+      sources.slice().sort((a,b) => (b.sessions||0) - (a.sessions||0)).forEach(s => {
+        const row = document.createElement('div');
+        row.className = 'src-row';
+        const widthPct = Math.round(((s.sessions || 0) / maxSessions) * 100);
+        row.innerHTML = `<div class="src-row-label"><span class="src-name">${s.source}</span><span class="src-count">${s.sessions ?? 0}</span></div><div class="src-bar-track"><div class="src-bar-fill" style="width:${widthPct}%"></div></div>`;
+        trafficList.appendChild(row);
+      });
     }
 
     // Ads panel
@@ -813,7 +903,8 @@
       const item = document.createElement('div');
       item.className = 'flow-item';
       const p = statusPill(f.status);
-      item.innerHTML = `<div><div class="flow-name">${f.name}</div><div class="flow-meta">${f.recipients_30d ?? 0} recipients (30d)${f.note ? ' · ' + f.note : ''}</div></div><span class="pill ${p.cls}">${p.label}</span>`;
+      const revenueBit = (typeof f.revenue_30d === 'number' && f.revenue_30d > 0) ? ' · ' + money(f.revenue_30d, sh.currency) + ' revenue' : '';
+      item.innerHTML = `<div><div class="flow-name">${f.name}</div><div class="flow-meta">${f.recipients_30d ?? 0} recipients (30d)${revenueBit}${f.note ? ' · ' + f.note : ''}</div></div><span class="pill ${p.cls}">${p.label}</span>`;
       flowList.appendChild(item);
     });
 
@@ -858,6 +949,27 @@
       const dailyBudget = (d.ads && d.ads.daily_budget) || 0;
       const breakevenUnits = blended > 0 ? Math.ceil((dailyBudget * 30) / blended) : null;
       document.getElementById('econ-breakeven').textContent = breakevenUnits ?? '—';
+    }
+
+    // Profitability
+    {
+      const profitRow = document.getElementById('profit-row');
+      if (typeof pr.net_profit_est_30d === 'number') {
+        profitRow.innerHTML = `<tr>
+          <td class="num">${money(pr.revenue_30d, sh.currency)}</td>
+          <td class="num">${money(pr.cogs_est_30d, sh.currency)}</td>
+          <td class="num">${money(pr.ad_spend_30d, sh.currency)}</td>
+          <td class="num">${money(pr.payment_fees_est_30d, sh.currency)}</td>
+          <td class="num ${pr.net_profit_est_30d >= 0 ? 'margin-good' : 'margin-low'}">${money(pr.net_profit_est_30d, sh.currency)}</td>
+        </tr>`;
+        document.getElementById('profit-net').textContent = money(pr.net_profit_est_30d, sh.currency);
+        document.getElementById('profit-orders').textContent = pr.orders_30d ?? 0;
+      } else {
+        profitRow.innerHTML = '<tr><td colspan="5">No profit data yet.</td></tr>';
+      }
+      if (pr.note) {
+        document.getElementById('profit-note').textContent = pr.note;
+      }
     }
 
     // Business inbox

@@ -7,6 +7,12 @@
     "currency": "CAD",
     "discount_code": "WELCOME15",
     "discount_active": true,
+    "discount_redemptions_alltime": 0,
+    "refunds": {
+      "total_refunded_alltime": 0,
+      "refunded_orders": []
+    },
+    "stuck_fulfillment_orders": [],
     "products": [
       {
         "title": "Crownstitch Groundhog Classic Embroidered Rope Hat",
@@ -50,6 +56,22 @@
       }
     ]
   },
+  "traffic": {
+    "sessions_by_source_30d": [
+      {
+        "source": "direct",
+        "sessions": 57
+      },
+      {
+        "source": "social",
+        "sessions": 11
+      },
+      {
+        "source": "search",
+        "sessions": 7
+      }
+    ]
+  },
   "ads": {
     "campaign_name": "Crownstitch - Advantage+ Shopping",
     "campaign_status": "Active",
@@ -60,7 +82,8 @@
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
-    "review_status": "Approved"
+    "review_status": "Approved",
+    "last_spend_change_at": "2026-09-03T23:44:29Z"
   },
   "klaviyo": {
     "flows": [
@@ -68,15 +91,26 @@
         "name": "Welcome Series",
         "status": "live",
         "recipients_30d": 0,
+        "revenue_30d": 0,
         "note": "Triggers on signup"
       },
       {
         "name": "Abandoned Checkout Reminder",
         "status": "live",
         "recipients_30d": 0,
+        "revenue_30d": 0,
         "note": "Triggers on abandoned checkout"
       }
     ]
+  },
+  "profit": {
+    "revenue_30d": 0,
+    "orders_30d": 0,
+    "cogs_est_30d": 0,
+    "ad_spend_30d": 2.61,
+    "payment_fees_est_30d": 0,
+    "net_profit_est_30d": -2.61,
+    "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders \u00d7 the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
     "unread_count": 4,
