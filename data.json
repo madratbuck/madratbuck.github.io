@@ -1,0 +1,136 @@
+{
+  "updated_at": "2026-09-03T23:44:29Z",
+  "shopify": {
+    "sessions_30d": 75,
+    "conversion_rate_30d": 0,
+    "orders_alltime": 0,
+    "currency": "CAD",
+    "discount_code": "WELCOME15",
+    "discount_active": true,
+    "products": [
+      {
+        "title": "Crownstitch Groundhog Classic Embroidered Rope Hat",
+        "price": 39.99,
+        "cogs": 28.0,
+        "variants": 2,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "McCheesus Hockey Rat Embroidered Trucker Hat",
+        "price": 34.99,
+        "cogs": 20.35,
+        "variants": 3,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Dragon Rider Rope Hat",
+        "price": 39.99,
+        "cogs": 28.0,
+        "variants": 3,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Samurai Golfer Embroidered Rope Hat",
+        "price": 39.99,
+        "cogs": 28.0,
+        "variants": 2,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Thunder King T-Rex Embroidered Rope Hat",
+        "price": 39.99,
+        "cogs": 28.0,
+        "variants": 3,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      }
+    ]
+  },
+  "ads": {
+    "campaign_name": "Crownstitch - Advantage+ Shopping",
+    "campaign_status": "Active",
+    "ad_set_status": "Active",
+    "daily_budget": 5.0,
+    "currency": "CAD",
+    "amount_spent_lifetime": 2.61,
+    "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
+    "pixel_id": "1054431213595120",
+    "conversion_event": "Purchase",
+    "review_status": "Approved"
+  },
+  "klaviyo": {
+    "flows": [
+      {
+        "name": "Welcome Series",
+        "status": "live",
+        "recipients_30d": 0,
+        "note": "Triggers on signup"
+      },
+      {
+        "name": "Abandoned Checkout Reminder",
+        "status": "live",
+        "recipients_30d": 0,
+        "note": "Triggers on abandoned checkout"
+      }
+    ]
+  },
+  "mail": {
+    "unread_count": 4,
+    "total_30d": 7,
+    "messages": [
+      {
+        "date": "2026-09-03T03:54:16Z",
+        "source": "Customer",
+        "subject": "Money added to your account",
+        "snippet": "Communication code: StayGoldenPonyBoy Wise. Your account for the world's money",
+        "unread": false
+      },
+      {
+        "date": "2026-09-03T02:13:16Z",
+        "source": "Meta",
+        "subject": "Your ad was approved",
+        "snippet": "Your ad was approved and should begin delivering shortly or when scheduled.",
+        "unread": true
+      },
+      {
+        "date": "2026-09-03T00:31:01Z",
+        "source": "Shopify",
+        "subject": "New sign-in to your Shopify account",
+        "snippet": "We noticed a new sign-in to your account from a new device.",
+        "unread": true
+      },
+      {
+        "date": "2026-09-03T00:09:18Z",
+        "source": "Klaviyo",
+        "subject": "Your toll-free number needs carrier verification",
+        "snippet": "Expect a 3\u20135 business day wait \u2014 here's what to do in the meantime.",
+        "unread": false
+      },
+      {
+        "date": "2026-09-02T23:52:49Z",
+        "source": "Klaviyo",
+        "subject": "Set up your shiny new Klaviyo account",
+        "snippet": "Your journey to smarter marketing starts now.",
+        "unread": true
+      },
+      {
+        "date": "2026-09-02T23:42:49Z",
+        "source": "Klaviyo",
+        "subject": "Confirm your Klaviyo email",
+        "snippet": "In order to finish setting up your account, please confirm your email.",
+        "unread": false
+      },
+      {
+        "date": "2026-08-19T13:00:24Z",
+        "source": "Shopify",
+        "subject": "\ud83d\udcac Help us improve Shopify",
+        "snippet": "A short survey to help improve tools for Shopify merchants.",
+        "unread": true
+      }
+    ]
+  }
+}
