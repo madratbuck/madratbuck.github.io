@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-04T01:50:24Z",
+  "updated_at": "2026-09-04T12:48:04Z",
   "shopify": {
-    "sessions_30d": 76,
+    "sessions_30d": 83,
     "conversion_rate_30d": 0,
     "orders_alltime": 0,
     "currency": "CAD",
@@ -60,11 +60,11 @@
     "sessions_by_source_30d": [
       {
         "source": "direct",
-        "sessions": 57
+        "sessions": 60
       },
       {
         "source": "social",
-        "sessions": 12
+        "sessions": 16
       },
       {
         "source": "search",
@@ -78,12 +78,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 3.27,
+    "amount_spent_lifetime": 4.89,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-04T01:50:24Z"
+    "last_spend_change_at": "2026-09-04T12:43:56Z"
   },
   "klaviyo": {
     "flows": [
@@ -107,10 +107,10 @@
     "revenue_30d": 0,
     "orders_30d": 0,
     "cogs_est_30d": 0,
-    "ad_spend_30d": 0,
+    "ad_spend_30d": 4.35,
     "payment_fees_est_30d": 0,
-    "net_profit_est_30d": 0,
-    "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
+    "net_profit_est_30d": -4.35,
+    "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders \u00d7 the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
     "unread_count": 4,
@@ -141,7 +141,7 @@
         "date": "2026-09-03T00:09:18Z",
         "source": "Klaviyo",
         "subject": "Your toll-free number needs carrier verification",
-        "snippet": "Expect a 3–5 business day wait — here's what to do in the meantime.",
+        "snippet": "Expect a 3\u20135 business day wait \u2014 here's what to do in the meantime.",
         "unread": false
       },
       {
@@ -161,10 +161,12 @@
       {
         "date": "2026-08-19T13:00:24Z",
         "source": "Shopify",
-        "subject": "💬 Help us improve Shopify",
+        "subject": "\ud83d\udcac Help us improve Shopify",
         "snippet": "A short survey to help improve tools for Shopify merchants.",
         "unread": true
       }
-    ]
+    ],
+    "last_check_status": "gmail_unavailable",
+    "last_check_at": "2026-09-04T12:43:56Z"
   }
 }
