@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-04T20:40:30Z",
+  "updated_at": "2026-09-05T00:45:54Z",
   "shopify": {
-    "sessions_30d": 84,
+    "sessions_30d": 85,
     "conversion_rate_30d": 0,
     "orders_alltime": 0,
     "currency": "CAD",
@@ -58,18 +58,9 @@
   },
   "traffic": {
     "sessions_by_source_30d": [
-      {
-        "source": "direct",
-        "sessions": 60
-      },
-      {
-        "source": "social",
-        "sessions": 17
-      },
-      {
-        "source": "search",
-        "sessions": 7
-      }
+      { "source": "direct", "sessions": 60 },
+      { "source": "social", "sessions": 18 },
+      { "source": "search", "sessions": 7 }
     ]
   },
   "ads": {
@@ -78,12 +69,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 5.53,
+    "amount_spent_lifetime": 6.23,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-04T20:40:30Z"
+    "last_spend_change_at": "2026-09-05T00:45:54Z"
   },
   "klaviyo": {
     "flows": [
@@ -169,11 +160,11 @@
         "date": "2026-09-03T00:09:18Z",
         "source": "Klaviyo",
         "subject": "Your toll-free number needs carrier verification",
-        "snippet": "Expect a 3–5 business day wait — here's what to do in the meantime.",
+        "snippet": "Expect a 3–5 business day wait — here's what to do in the meantime",
         "unread": false
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-04T20:40:30Z"
+    "last_check_at": "2026-09-05T00:45:54Z"
   }
 }
