@@ -94,14 +94,13 @@ def shopify_shopifyql(q):
     return node.get("tableData")
 
 
-def fetch_shopify(prev_shopify):
+def fetch_shopify(prev_shopify, prev_traffic_sources):
     result = {}
 
     # --- sessions / conversion rate (best-effort; needs read_reports+read_analytics) ---
     sessions_30d = prev_shopify.get("sessions_30d", 0)
     conversion_rate_30d = prev_shopify.get("conversion_rate_30d", 0)
-    traffic_sources = (prev_shopify.get("_traffic_sources")
-                        or [])
+    traffic_sources = prev_traffic_sources or []
     try:
         table = shopify_shopifyql(
             "FROM sessions SHOW sessions, conversion_rate SINCE -30d UNTIL today"
@@ -534,25 +533,45 @@ def fetch_gmail():
             except Exception:
                 date_iso = NOW_ISO
 
-            # snippet: first text/plain part, trimmed
+            # snippet: prefer text/plain; fall back to text/html with tags stripped
             snippet = ""
+            html_fallback = ""
             if msg.is_multipart():
                 for part in msg.walk():
-                    if part.get_content_type() == "text/plain":
+                    ctype = part.get_content_type()
+                    if ctype == "text/plain" and not snippet:
                         try:
                             snippet = part.get_payload(decode=True).decode(
                                 part.get_content_charset() or "utf-8", errors="replace"
                             )
                         except Exception:
-                            snippet = ""
-                        break
+                            pass
+                    elif ctype == "text/html" and not html_fallback:
+                        try:
+                            html_fallback = part.get_payload(decode=True).decode(
+                                part.get_content_charset() or "utf-8", errors="replace"
+                            )
+                        except Exception:
+                            pass
             else:
                 try:
-                    snippet = msg.get_payload(decode=True).decode(
+                    raw_payload = msg.get_payload(decode=True).decode(
                         msg.get_content_charset() or "utf-8", errors="replace"
                     )
                 except Exception:
-                    snippet = ""
+                    raw_payload = ""
+                if msg.get_content_type() == "text/html":
+                    html_fallback = raw_payload
+                else:
+                    snippet = raw_payload
+
+            if not snippet and html_fallback:
+                # strip tags/scripts/styles down to plain text
+                text = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", html_fallback)
+                text = re.sub(r"(?s)<[^>]+>", " ", text)
+                text = re.sub(r"&nbsp;|&#8203;|​|­", " ", text)
+                snippet = text
+
             snippet = " ".join(snippet.split())[:150]
             if len(snippet) == 150:
                 cut = snippet.rfind(" ")
@@ -605,8 +624,9 @@ def main():
     prev_ads = prev.get("ads", {})
     prev_klaviyo = prev.get("klaviyo", {})
     prev_mail = prev.get("mail", {})
+    prev_traffic_sources = prev.get("traffic", {}).get("sessions_by_source_30d", [])
 
-    shopify = fetch_shopify(prev_shopify)
+    shopify = fetch_shopify(prev_shopify, prev_traffic_sources)
     klaviyo = fetch_klaviyo(prev_klaviyo)
     ads = fetch_meta(prev_ads)
     mail = fetch_gmail()
