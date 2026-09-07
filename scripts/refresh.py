@@ -84,14 +84,18 @@ def shopify_graphql(query, variables=None):
 def shopify_shopifyql(q):
     data = shopify_graphql(
         "query($q: String!) { shopifyqlQuery(query: $q) { parseErrors "
-        "tableData { columns { name } rowData } } }",
+        "tableData { columns { name } rows } } }",
         {"q": q},
     )
     node = (data or {}).get("shopifyqlQuery") or {}
     if node.get("parseErrors"):
         log(f"ShopifyQL parse errors for '{q}': {node['parseErrors']}")
         return None
-    return node.get("tableData")
+    table = node.get("tableData")
+    if table is not None:
+        table = dict(table)
+        table["rowData"] = table.get("rows") or []
+    return table
 
 
 def fetch_shopify(prev_shopify, prev_traffic_sources):
