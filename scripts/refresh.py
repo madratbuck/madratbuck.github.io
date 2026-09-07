@@ -111,8 +111,8 @@ def fetch_shopify(prev_shopify, prev_traffic_sources):
         )
         if table and table.get("rowData"):
             row = table["rowData"][0]
-            sessions_30d = int(float(row[0]))
-            conversion_rate_30d = float(row[1])
+            sessions_30d = int(float(row["sessions"]))
+            conversion_rate_30d = float(row["conversion_rate"])
     except Exception as e:
         log(f"Sessions/conversion query failed, carrying forward: {e}")
 
@@ -122,7 +122,8 @@ def fetch_shopify(prev_shopify, prev_traffic_sources):
         )
         if table and table.get("rowData"):
             traffic_sources = [
-                {"source": r[0], "sessions": int(float(r[1]))} for r in table["rowData"]
+                {"source": r["referrer_source"], "sessions": int(float(r["sessions"]))}
+                for r in table["rowData"]
             ]
     except Exception as e:
         log(f"Traffic-source query failed, carrying forward: {e}")
@@ -137,8 +138,8 @@ def fetch_shopify(prev_shopify, prev_traffic_sources):
         table = shopify_shopifyql("FROM sales SHOW orders, total_sales SINCE -30d UNTIL today")
         if table and table.get("rowData"):
             row = table["rowData"][0]
-            orders_30d = int(float(row[0]))
-            revenue_30d = float(row[1])
+            orders_30d = int(float(row["orders"]))
+            revenue_30d = float(row["total_sales"])
     except Exception as e:
         log(f"Orders/revenue query failed: {e}")
     result["_orders_30d"] = orders_30d
