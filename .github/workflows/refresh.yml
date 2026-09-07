@@ -1,0 +1,54 @@
+name: Crownstitch Pulse Refresh
+
+on:
+  schedule:
+    # Runs hourly. GitHub Actions cron is UTC and best-effort (can slip a few
+    # minutes under load), which is fine for an hourly dashboard refresh.
+    - cron: "0 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crownstitch-pulse-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install --quiet requests
+
+      - name: Run refresh script
+        env:
+          SHOPIFY_STORE_DOMAIN: ${{ secrets.SHOPIFY_STORE_DOMAIN }}
+          SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
+          KLAVIYO_API_KEY: ${{ secrets.KLAVIYO_API_KEY }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_AD_ACCOUNT_ID: ${{ secrets.META_AD_ACCOUNT_ID }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ALERT_EMAILS: ${{ secrets.ALERT_EMAILS }}
+        run: python scripts/refresh.py
+
+      - name: Commit and push data.json
+        run: |
+          git config user.name "crownstitch-pulse-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet -- data.json; then
+            echo "No changes to data.json"
+          else
+            git add data.json
+            git commit -m "Automated Crownstitch Pulse refresh"
+            git push
+          fi
