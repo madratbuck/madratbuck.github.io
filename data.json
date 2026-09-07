@@ -1,18 +1,9 @@
 {
-  "updated_at": "2026-09-05T00:45:54Z",
+  "updated_at": "2026-09-07T21:02:24Z",
   "shopify": {
     "sessions_30d": 85,
     "conversion_rate_30d": 0,
     "orders_alltime": 0,
-    "currency": "CAD",
-    "discount_code": "WELCOME15",
-    "discount_active": true,
-    "discount_redemptions_alltime": 0,
-    "refunds": {
-      "total_refunded_alltime": 0,
-      "refunded_orders": []
-    },
-    "stuck_fulfillment_orders": [],
     "products": [
       {
         "title": "Crownstitch Groundhog Classic Embroidered Rope Hat",
@@ -54,14 +45,19 @@
         "status": "Active",
         "stock": "In stock (dropship)"
       }
-    ]
+    ],
+    "discount_code": "WELCOME15",
+    "discount_active": true,
+    "discount_redemptions_alltime": 0,
+    "refunds": {
+      "total_refunded_alltime": 0.0,
+      "refunded_orders": []
+    },
+    "stuck_fulfillment_orders": [],
+    "currency": "CAD"
   },
   "traffic": {
-    "sessions_by_source_30d": [
-      { "source": "direct", "sessions": 60 },
-      { "source": "social", "sessions": 18 },
-      { "source": "search", "sessions": 7 }
-    ]
+    "sessions_by_source_30d": []
   },
   "ads": {
     "campaign_name": "Crownstitch - Advantage+ Shopping",
@@ -95,76 +91,76 @@
     ]
   },
   "profit": {
-    "revenue_30d": 0,
+    "revenue_30d": 0.0,
     "orders_30d": 0,
-    "cogs_est_30d": 0,
-    "ad_spend_30d": 4.35,
-    "payment_fees_est_30d": 0,
-    "net_profit_est_30d": -4.35,
-    "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
+    "cogs_est_30d": 0.0,
+    "ad_spend_30d": 6.23,
+    "payment_fees_est_30d": 0.0,
+    "net_profit_est_30d": -6.23,
+    "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order., and ad spend uses lifetime spend as a stand-in for last-30-day spend since the 30-day figure couldn't be confirmed this run"
   },
   "mail": {
-    "unread_count": 6,
-    "total_30d": 11,
+    "unread_count": 12,
+    "total_30d": 21,
     "messages": [
+      {
+        "date": "2026-09-07T13:09:09Z",
+        "source": "Klaviyo",
+        "subject": "Your toll-free number is verified—here’syour next step",
+        "snippet": "[Live training](https://www.bigmarker.com/klaviyo-customer-education/getting-started-sms-klaviyo) Getting Started with SMS in Klaviyo Now that your",
+        "unread": true
+      },
+      {
+        "date": "2026-09-07T04:05:27Z",
+        "source": "Klaviyo",
+        "subject": "Send your first SMS campaign today",
+        "snippet": "Your number is verified. It’s go time. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+        "unread": true
+      },
+      {
+        "date": "2026-09-06T13:30:02Z",
+        "source": "Klaviyo",
+        "subject": "Your followers are already your best leads",
+        "snippet": "You just need the right tools to reach them. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+        "unread": true
+      },
+      {
+        "date": "2026-09-06T05:11:24Z",
+        "source": "Klaviyo",
+        "subject": "New device login on Klaviyo",
+        "snippet": "Someone just tried to log in to your account. We want to make sure it's really you. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+        "unread": true
+      },
+      {
+        "date": "2026-09-05T21:05:00Z",
+        "source": "Shopify",
+        "subject": "No one is ever really \"ready\" so just start now",
+        "snippet": "<!DOCTYPE html><html lang=\"en\" dir=\"ltr\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\"",
+        "unread": true
+      },
+      {
+        "date": "2026-09-05T14:33:10Z",
+        "source": "Customer",
+        "subject": "We're making some changes to our PayPal legal agreements",
+        "snippet": "<html dir=\"ltr\" lang=\"en\"> <head> <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /> <meta name=\"viewport\"",
+        "unread": true
+      },
       {
         "date": "2026-09-04T15:00:23Z",
         "source": "Klaviyo",
         "subject": "You ask, we deliver 🚀",
-        "snippet": "See how Klaviyo's constant improvements help you meet your goals.",
+        "snippet": "See how Klaviyo’s constant improvements help you meet your goals. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
       },
       {
         "date": "2026-09-04T13:45:07Z",
         "source": "Klaviyo",
         "subject": "You hit your first milestone",
-        "snippet": "You're officially a Klaviyo creator.",
-        "unread": false
-      },
-      {
-        "date": "2026-09-04T12:31:18Z",
-        "source": "Klaviyo",
-        "subject": "Your toll-free number has been verified!",
-        "snippet": "Klaviyo Crownstitch can now use your toll-free number. Your toll-free number is now verified and ready for sending.",
+        "snippet": "You’re officially a Klaviyo creator. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
-      },
-      {
-        "date": "2026-09-04T00:48:54Z",
-        "source": "Meta",
-        "subject": "Your Meta ads receipt (Account ID: 1041318392007265)",
-        "snippet": "This is not an invoice Transaction for Crownstitch (1041318392007265) Transaction ID",
-        "unread": false
-      },
-      {
-        "date": "2026-09-03T03:54:16Z",
-        "source": "Customer",
-        "subject": "Money added to your account",
-        "snippet": "Communication code: StayGoldenPonyBoy Wise. Your account for the world's money",
-        "unread": false
-      },
-      {
-        "date": "2026-09-03T02:13:16Z",
-        "source": "Meta",
-        "subject": "Your ad was approved",
-        "snippet": "Your ad was approved and should begin delivering shortly or when scheduled.",
-        "unread": true
-      },
-      {
-        "date": "2026-09-03T00:31:01Z",
-        "source": "Shopify",
-        "subject": "New sign-in to your Shopify account",
-        "snippet": "We noticed a new sign-in to your account from a new device.",
-        "unread": true
-      },
-      {
-        "date": "2026-09-03T00:09:18Z",
-        "source": "Klaviyo",
-        "subject": "Your toll-free number needs carrier verification",
-        "snippet": "Expect a 3–5 business day wait — here's what to do in the meantime",
-        "unread": false
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-05T00:45:54Z"
+    "last_check_at": "2026-09-07T21:02:24Z"
   }
 }
