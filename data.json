@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T10:18:12Z",
+  "updated_at": "2026-09-09T14:52:53Z",
   "shopify": {
     "sessions_30d": 107,
     "conversion_rate_30d": 0.0,
@@ -90,12 +90,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 32.35,
+    "amount_spent_lifetime": 33.14,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-09T10:18:12Z"
+    "last_spend_change_at": "2026-09-09T14:52:53Z"
   },
   "klaviyo": {
     "flows": [
@@ -125,9 +125,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 5,
-    "total_30d": 22,
+    "unread_count": 6,
+    "total_30d": 23,
     "messages": [
+      {
+        "date": "2026-09-09T12:46:13Z",
+        "source": "Klaviyo",
+        "subject": "Four reasons to upgrade your Klaviyo account today",
+        "snippet": "You’ve tried Klaviyo for a week, keep up your momentum ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­",
+        "unread": true
+      },
       {
         "date": "2026-09-08T13:12:54Z",
         "source": "Customer",
@@ -176,16 +183,9 @@
         "subject": "We're making some changes to our PayPal legal agreements",
         "snippet": "We&#x27;re making some changes to our PayPal legal agreements Jayce Greer, you can view the changes on our website. Hello, Jayce Greer We're making",
         "unread": true
-      },
-      {
-        "date": "2026-09-04T15:00:23Z",
-        "source": "Klaviyo",
-        "subject": "You ask, we deliver 🚀",
-        "snippet": "See how Klaviyo’s constant improvements help you meet your goals. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-09T10:18:12Z"
+    "last_check_at": "2026-09-09T14:52:53Z"
   }
 }
