@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T14:52:53Z",
+  "updated_at": "2026-09-09T18:07:11Z",
   "shopify": {
     "sessions_30d": 107,
     "conversion_rate_30d": 0.0,
@@ -90,12 +90,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 33.14,
+    "amount_spent_lifetime": 33.72,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-09T14:52:53Z"
+    "last_spend_change_at": "2026-09-09T18:07:11Z"
   },
   "klaviyo": {
     "flows": [
@@ -125,7 +125,7 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 6,
+    "unread_count": 5,
     "total_30d": 23,
     "messages": [
       {
@@ -186,6 +186,6 @@
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-09T14:52:53Z"
+    "last_check_at": "2026-09-09T18:07:11Z"
   }
 }
