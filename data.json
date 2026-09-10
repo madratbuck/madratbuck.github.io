@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-10T11:56:20Z",
+  "updated_at": "2026-09-10T15:34:52Z",
   "shopify": {
-    "sessions_30d": 112,
+    "sessions_30d": 114,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,7 +68,7 @@
     "sessions_by_source_30d": [
       {
         "source": "direct",
-        "sessions": 69
+        "sessions": 71
       },
       {
         "source": "social",
@@ -90,12 +90,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 37.23,
+    "amount_spent_lifetime": 37.72,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-10T11:56:20Z"
+    "last_spend_change_at": "2026-09-10T15:34:52Z"
   },
   "klaviyo": {
     "flows": [
@@ -125,9 +125,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 5,
-    "total_30d": 23,
+    "unread_count": 6,
+    "total_30d": 24,
     "messages": [
+      {
+        "date": "2026-09-10T13:45:11Z",
+        "source": "Klaviyo",
+        "subject": "Quick question from the Klaviyo team",
+        "snippet": "Now that you’re set up—how has it actually been? ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+        "unread": true
+      },
       {
         "date": "2026-09-09T12:46:13Z",
         "source": "Klaviyo",
@@ -176,16 +183,9 @@
         "subject": "No one is ever really \"ready\" so just start now",
         "snippet": "Shopify 96 Marcus had no plan, just an idea and Shopify. ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏",
         "unread": true
-      },
-      {
-        "date": "2026-09-05T14:33:10Z",
-        "source": "Customer",
-        "subject": "We're making some changes to our PayPal legal agreements",
-        "snippet": "We&#x27;re making some changes to our PayPal legal agreements Jayce Greer, you can view the changes on our website. Hello, Jayce Greer We're making",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-10T11:56:20Z"
+    "last_check_at": "2026-09-10T15:34:52Z"
   }
 }
