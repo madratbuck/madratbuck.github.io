@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-10T21:17:06Z",
+  "updated_at": "2026-09-10T23:31:32Z",
   "shopify": {
-    "sessions_30d": 114,
+    "sessions_30d": 115,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,7 +68,7 @@
     "sessions_by_source_30d": [
       {
         "source": "direct",
-        "sessions": 71
+        "sessions": 72
       },
       {
         "source": "social",
@@ -90,12 +90,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 38.98,
+    "amount_spent_lifetime": 40.04,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-10T21:17:06Z"
+    "last_spend_change_at": "2026-09-10T23:31:32Z"
   },
   "klaviyo": {
     "flows": [
@@ -125,9 +125,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 5,
-    "total_30d": 24,
+    "unread_count": 6,
+    "total_30d": 25,
     "messages": [
+      {
+        "date": "2026-09-10T22:05:00Z",
+        "source": "Shopify",
+        "subject": "He chose Shopify so he could sleep at night",
+        "snippet": "Shopify 96 Ryan had $3K and a problem to solve. ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏",
+        "unread": true
+      },
       {
         "date": "2026-09-10T13:45:11Z",
         "source": "Klaviyo",
@@ -176,16 +183,9 @@
         "subject": "New device login on Klaviyo",
         "snippet": "Someone just tried to log in to your account. We want to make sure it's really you. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
-      },
-      {
-        "date": "2026-09-05T21:05:00Z",
-        "source": "Shopify",
-        "subject": "No one is ever really \"ready\" so just start now",
-        "snippet": "Shopify 96 Marcus had no plan, just an idea and Shopify. ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-10T21:17:06Z"
+    "last_check_at": "2026-09-10T23:31:32Z"
   }
 }
