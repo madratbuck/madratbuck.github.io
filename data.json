@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-10T01:54:17Z",
+  "updated_at": "2026-09-10T06:47:30Z",
   "shopify": {
-    "sessions_30d": 111,
+    "sessions_30d": 112,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -72,7 +72,7 @@
       },
       {
         "source": "social",
-        "sessions": 39
+        "sessions": 40
       },
       {
         "source": "search",
@@ -90,12 +90,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 36.17,
+    "amount_spent_lifetime": 37.04,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-10T01:54:17Z"
+    "last_spend_change_at": "2026-09-10T06:47:30Z"
   },
   "klaviyo": {
     "flows": [
@@ -119,9 +119,9 @@
     "revenue_30d": 0.0,
     "orders_30d": 0,
     "cogs_est_30d": 0.0,
-    "ad_spend_30d": 31.88,
+    "ad_spend_30d": 36.88,
     "payment_fees_est_30d": 0.0,
-    "net_profit_est_30d": -31.88,
+    "net_profit_est_30d": -36.88,
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
@@ -186,6 +186,6 @@
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-10T01:54:17Z"
+    "last_check_at": "2026-09-10T06:47:30Z"
   }
 }
