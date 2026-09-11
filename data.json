@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-11T11:55:18Z",
+  "updated_at": "2026-09-11T15:27:06Z",
   "shopify": {
-    "sessions_30d": 118,
+    "sessions_30d": 119,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,7 +68,7 @@
     "sessions_by_source_30d": [
       {
         "source": "direct",
-        "sessions": 72
+        "sessions": 73
       },
       {
         "source": "social",
@@ -90,12 +90,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 42.44,
+    "amount_spent_lifetime": 44.04,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-11T11:55:18Z"
+    "last_spend_change_at": "2026-09-11T15:27:06Z"
   },
   "klaviyo": {
     "flows": [
@@ -125,9 +125,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 5,
-    "total_30d": 25,
+    "unread_count": 6,
+    "total_30d": 26,
     "messages": [
+      {
+        "date": "2026-09-11T15:01:52Z",
+        "source": "Klaviyo",
+        "subject": "Let AI do the heavy lifting",
+        "snippet": "Klaviyo’s powerful AI tools make growth simple. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+        "unread": true
+      },
       {
         "date": "2026-09-10T22:05:00Z",
         "source": "Shopify",
@@ -176,16 +183,9 @@
         "subject": "Your followers are already your best leads",
         "snippet": "You just need the right tools to reach them. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
-      },
-      {
-        "date": "2026-09-06T05:11:24Z",
-        "source": "Klaviyo",
-        "subject": "New device login on Klaviyo",
-        "snippet": "Someone just tried to log in to your account. We want to make sure it's really you. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-11T11:55:18Z"
+    "last_check_at": "2026-09-11T15:27:06Z"
   }
 }
