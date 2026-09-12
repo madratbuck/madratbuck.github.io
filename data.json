@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T21:25:37Z",
+  "updated_at": "2026-09-12T21:29:01Z",
   "shopify": {
     "sessions_30d": 162,
     "conversion_rate_30d": 0.0,
@@ -93,7 +93,7 @@
     "amount_spent_lifetime": 49.78,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
-    "conversion_event": "Content View",
+    "conversion_event": "View content",
     "review_status": "Approved",
     "last_spend_change_at": "2026-09-12T21:25:37Z",
     "ad_set_name": "Sales Ad Set - View Content Optimization"
@@ -187,6 +187,6 @@
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-12T21:25:37Z"
+    "last_check_at": "2026-09-12T21:29:01Z"
   }
 }
