@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-12T17:30:43Z",
+  "updated_at": "2026-09-12T19:48:43Z",
   "shopify": {
-    "sessions_30d": 127,
+    "sessions_30d": 159,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
       {
         "title": "Crownstitch Groundhog Classic Embroidered Rope Hat",
-        "price": 39.99,
+        "price": 49.99,
         "cogs": 28.0,
         "variants": 2,
         "status": "Active",
@@ -15,7 +15,7 @@
       },
       {
         "title": "McCheesus Hockey Rat Embroidered Trucker Hat",
-        "price": 34.99,
+        "price": 44.99,
         "cogs": 20.35,
         "variants": 3,
         "status": "Active",
@@ -23,7 +23,7 @@
       },
       {
         "title": "Dragon Rider Rope Hat",
-        "price": 39.99,
+        "price": 49.99,
         "cogs": 28.0,
         "variants": 3,
         "status": "Active",
@@ -31,7 +31,7 @@
       },
       {
         "title": "Samurai Golfer Embroidered Rope Hat",
-        "price": 39.99,
+        "price": 49.99,
         "cogs": 28.0,
         "variants": 2,
         "status": "Active",
@@ -39,7 +39,7 @@
       },
       {
         "title": "Thunder King T-Rex Embroidered Rope Hat",
-        "price": 39.99,
+        "price": 49.99,
         "cogs": 28.0,
         "variants": 3,
         "status": "Active",
@@ -47,7 +47,7 @@
       },
       {
         "title": "Cash Out Poker Chip Embroidered 5 Panel Cap",
-        "price": 34.99,
+        "price": 44.99,
         "cogs": 22.0,
         "variants": 4,
         "status": "Active",
@@ -68,11 +68,11 @@
     "sessions_by_source_30d": [
       {
         "source": "direct",
-        "sessions": 79
+        "sessions": 104
       },
       {
         "source": "social",
-        "sessions": 45
+        "sessions": 52
       },
       {
         "source": "search",
@@ -90,12 +90,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 48.36,
+    "amount_spent_lifetime": 48.95,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-12T17:30:43Z"
+    "last_spend_change_at": "2026-09-12T19:48:43Z"
   },
   "klaviyo": {
     "flows": [
@@ -125,9 +125,23 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 5,
-    "total_30d": 27,
+    "unread_count": 7,
+    "total_30d": 29,
     "messages": [
+      {
+        "date": "2026-09-12T19:09:45Z",
+        "source": "Customer",
+        "subject": "Make Crownstitch's reviews visible - takes 2 minutes",
+        "snippet": "Two quick steps and every shopper sees your social proof. Get started now (",
+        "unread": true
+      },
+      {
+        "date": "2026-09-12T18:58:26Z",
+        "source": "Meta",
+        "subject": "Your ad was approved",
+        "snippet": "Meta for Business Your ad was approved and should begin delivering shortly or when scheduled. ‌ Your ad was approved Hi Jayce, Your ad was approved",
+        "unread": true
+      },
       {
         "date": "2026-09-11T22:05:02Z",
         "source": "Shopify",
@@ -169,23 +183,9 @@
         "subject": "Login from a new device detected on 8 September 2026, 13:12 GMT",
         "snippet": "96 Communication code: StayGoldenPonyBoy Wise. Your account for the world's money &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;",
         "unread": true
-      },
-      {
-        "date": "2026-09-07T13:09:09Z",
-        "source": "Klaviyo",
-        "subject": "Your toll-free number is verified—here’syour next step",
-        "snippet": "[Live training](https://www.bigmarker.com/klaviyo-customer-education/getting-started-sms-klaviyo) Getting Started with SMS in Klaviyo Now that your",
-        "unread": true
-      },
-      {
-        "date": "2026-09-07T04:05:27Z",
-        "source": "Klaviyo",
-        "subject": "Send your first SMS campaign today",
-        "snippet": "Your number is verified. It’s go time. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-12T17:30:43Z"
+    "last_check_at": "2026-09-12T19:48:43Z"
   }
 }
