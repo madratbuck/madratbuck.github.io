@@ -402,6 +402,7 @@ def meta_get(path, params):
 CUSTOM_EVENT_LABELS = {
     "PURCHASE": "Purchase",
     "VIEW_CONTENT": "View content",
+    "CONTENT_VIEW": "View content",  # Meta's Graph API actually returns this spelling
     "ADD_TO_CART": "Add to cart",
     "INITIATE_CHECKOUT": "Initiate checkout",
     "ADD_PAYMENT_INFO": "Add payment info",
