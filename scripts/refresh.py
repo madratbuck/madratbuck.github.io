@@ -396,6 +396,50 @@ def meta_get(path, params):
     return r
 
 
+# Human-readable labels for Meta's conversion-event / optimization-goal enums,
+# used so the dashboard shows "Purchase" / "View content" instead of raw
+# API constants like PURCHASE / VIEW_CONTENT.
+CUSTOM_EVENT_LABELS = {
+    "PURCHASE": "Purchase",
+    "VIEW_CONTENT": "View content",
+    "ADD_TO_CART": "Add to cart",
+    "INITIATE_CHECKOUT": "Initiate checkout",
+    "ADD_PAYMENT_INFO": "Add payment info",
+    "COMPLETE_REGISTRATION": "Complete registration",
+    "LEAD": "Lead",
+    "SEARCH": "Search",
+    "ADD_TO_WISHLIST": "Add to wishlist",
+    "SUBSCRIBE": "Subscribe",
+    "START_TRIAL": "Start trial",
+    "CONTACT": "Contact",
+}
+
+OPTIMIZATION_GOAL_LABELS = {
+    "LANDING_PAGE_VIEWS": "Landing page views",
+    "LINK_CLICKS": "Link clicks",
+    "IMPRESSIONS": "Impressions",
+    "REACH": "Reach",
+    "THRUPLAY": "ThruPlay",
+    "APP_INSTALLS": "App installs",
+    "POST_ENGAGEMENT": "Post engagement",
+    "VALUE": "Conversion value",
+}
+
+
+def describe_conversion_event(adset):
+    """Derive a human-readable conversion-event label directly from an ad
+    set's live optimization_goal / promoted_object, rather than trusting a
+    stored value that never gets re-checked against Meta."""
+    promoted = adset.get("promoted_object") or {}
+    custom_event = promoted.get("custom_event_type")
+    if custom_event:
+        return CUSTOM_EVENT_LABELS.get(custom_event, custom_event.replace("_", " ").title())
+    goal = adset.get("optimization_goal")
+    if goal:
+        return OPTIMIZATION_GOAL_LABELS.get(goal, goal.replace("_", " ").title())
+    return None
+
+
 def fetch_meta(prev_ads):
     result = dict(prev_ads)  # start as a full carry-forward, overwrite what we can read
     try:
@@ -412,13 +456,35 @@ def fetch_meta(prev_ads):
     except Exception as e:
         log(f"Meta campaigns fetch failed, carrying forward: {e}")
 
+    # Ad set + conversion event: resolved dynamically every run from whichever
+    # ad set is actually ACTIVE right now, rather than a hardcoded ad set name
+    # or a value carried forward forever. Ad sets get duplicated/replaced
+    # whenever the conversion event needs to change (Meta locks that field
+    # post-publish), so a name-based lookup silently goes stale the moment
+    # that happens — this looks at live status instead.
     try:
-        r = meta_get(f"act_{META_AD_ACCOUNT_ID}/adsets", {"fields": "name,status"})
+        r = meta_get(f"act_{META_AD_ACCOUNT_ID}/adsets", {
+            "fields": "name,status,effective_status,optimization_goal,promoted_object",
+        })
         r.raise_for_status()
-        for a in r.json().get("data", []):
-            if a.get("name") == "New Sales Ad Set - Copy":
-                result["ad_set_status"] = a.get("status", result.get("ad_set_status")).capitalize()
-                break
+        adsets = r.json().get("data", [])
+        active_adsets = [a for a in adsets if a.get("effective_status") == "ACTIVE"]
+        chosen = active_adsets[0] if active_adsets else None
+        if chosen is None and adsets:
+            # Nothing currently active (e.g. mid-swap between ad sets) —
+            # prefer whichever ad set we were already tracking so status
+            # doesn't jump to an unrelated ad set, but don't touch
+            # conversion_event since it may not reflect what's coming next.
+            by_name = {a.get("name"): a for a in adsets}
+            chosen = by_name.get(result.get("ad_set_name")) or adsets[0]
+            result["ad_set_name"] = chosen.get("name")
+            result["ad_set_status"] = (chosen.get("effective_status") or chosen.get("status") or "").capitalize()
+        elif chosen is not None:
+            result["ad_set_name"] = chosen.get("name")
+            result["ad_set_status"] = chosen.get("effective_status", "").capitalize()
+            event_label = describe_conversion_event(chosen)
+            if event_label:
+                result["conversion_event"] = event_label
     except Exception as e:
         log(f"Meta ad sets fetch failed, carrying forward: {e}")
 
