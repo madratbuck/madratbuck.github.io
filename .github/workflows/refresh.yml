@@ -4,7 +4,11 @@ on:
   schedule:
     # Runs hourly. GitHub Actions cron is UTC and best-effort (can slip a few
     # minutes under load), which is fine for an hourly dashboard refresh.
-    - cron: "0 * * * *"
+    # Deliberately NOT minute 0: GitHub's own docs warn that top-of-the-hour
+    # is their highest-load time and schedules there are most likely to be
+    # delayed. Run history confirmed this in practice (gaps of 2-5 hours
+    # instead of ~1), so this uses :17 instead to dodge the rush.
+    - cron: "17 * * * *"
   workflow_dispatch: {}
 
 permissions:
