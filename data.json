@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T21:29:01Z",
+  "updated_at": "2026-09-13T00:02:20Z",
   "shopify": {
     "sessions_30d": 162,
     "conversion_rate_30d": 0.0,
@@ -126,9 +126,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 5,
-    "total_30d": 29,
+    "unread_count": 6,
+    "total_30d": 30,
     "messages": [
+      {
+        "date": "2026-09-12T21:25:35Z",
+        "source": "Meta",
+        "subject": "Your ad was approved",
+        "snippet": "Meta for Business Your ad was approved and should begin delivering shortly or when scheduled. ‌ Your ad was approved Hi Jayce, Your ad was approved",
+        "unread": true
+      },
       {
         "date": "2026-09-12T19:09:45Z",
         "source": "Customer",
@@ -177,16 +184,9 @@
         "subject": "Four reasons to upgrade your Klaviyo account today",
         "snippet": "You’ve tried Klaviyo for a week, keep up your momentum ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­",
         "unread": true
-      },
-      {
-        "date": "2026-09-08T13:12:54Z",
-        "source": "Customer",
-        "subject": "Login from a new device detected on 8 September 2026, 13:12 GMT",
-        "snippet": "96 Communication code: StayGoldenPonyBoy Wise. Your account for the world's money &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-12T21:29:01Z"
+    "last_check_at": "2026-09-13T00:02:20Z"
   }
 }
