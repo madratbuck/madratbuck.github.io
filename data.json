@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-13T14:55:51Z",
+  "updated_at": "2026-09-13T18:14:20Z",
   "shopify": {
-    "sessions_30d": 160,
+    "sessions_30d": 167,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,7 +68,7 @@
     "sessions_by_source_30d": [
       {
         "source": "direct",
-        "sessions": 103
+        "sessions": 110
       },
       {
         "source": "social",
@@ -127,8 +127,15 @@
   },
   "mail": {
     "unread_count": 5,
-    "total_30d": 30,
+    "total_30d": 31,
     "messages": [
+      {
+        "date": "2026-09-13T17:14:47Z",
+        "source": "Klaviyo",
+        "subject": "New device login on Klaviyo",
+        "snippet": "Someone just tried to log in to your account. We want to make sure it's really you. ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+        "unread": true
+      },
       {
         "date": "2026-09-12T21:25:35Z",
         "source": "Meta",
@@ -177,16 +184,9 @@
         "subject": "Quick question from the Klaviyo team",
         "snippet": "Now that you’re set up—how has it actually been? ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
-      },
-      {
-        "date": "2026-09-09T12:46:13Z",
-        "source": "Klaviyo",
-        "subject": "Four reasons to upgrade your Klaviyo account today",
-        "snippet": "You’ve tried Klaviyo for a week, keep up your momentum ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-13T14:55:51Z"
+    "last_check_at": "2026-09-13T18:14:20Z"
   }
 }
