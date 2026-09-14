@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-14T01:12:13Z",
+  "updated_at": "2026-09-14T06:23:29Z",
   "shopify": {
-    "sessions_30d": 173,
+    "sessions_30d": 246,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,19 +68,19 @@
     "sessions_by_source_30d": [
       {
         "source": "direct",
-        "sessions": 116
+        "sessions": 149
       },
       {
         "source": "social",
-        "sessions": 53
+        "sessions": 90
       },
       {
         "source": "search",
-        "sessions": 3
+        "sessions": 5
       },
       {
         "source": "unknown",
-        "sessions": 1
+        "sessions": 2
       }
     ]
   },
@@ -90,12 +90,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 58.52,
+    "amount_spent_lifetime": 67.27,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "View content",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-13T14:55:51Z",
+    "last_spend_change_at": "2026-09-14T06:23:29Z",
     "ad_set_name": "Sales Ad Set - View Content Optimization"
   },
   "klaviyo": {
@@ -120,15 +120,29 @@
     "revenue_30d": 0.0,
     "orders_30d": 0,
     "cogs_est_30d": 0.0,
-    "ad_spend_30d": 49.78,
+    "ad_spend_30d": 58.52,
     "payment_fees_est_30d": 0.0,
-    "net_profit_est_30d": -49.78,
+    "net_profit_est_30d": -58.52,
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 5,
-    "total_30d": 31,
+    "unread_count": 6,
+    "total_30d": 33,
     "messages": [
+      {
+        "date": "2026-09-14T02:26:28Z",
+        "source": "Shopify",
+        "subject": "New sign-in to your Shopify account",
+        "snippet": "September 14, 2026 New device signed in -------------------- Review activity Review activity (",
+        "unread": true
+      },
+      {
+        "date": "2026-09-14T02:25:15Z",
+        "source": "Customer",
+        "subject": "Add Judge.me widgets to your new theme",
+        "snippet": "Hi Jayce, We see you've published a new theme for Crownstitch . To show reviews on your pages, don&#39;t forget to install Judge.me&#39;s widgets in",
+        "unread": true
+      },
       {
         "date": "2026-09-13T17:14:47Z",
         "source": "Klaviyo",
@@ -170,23 +184,9 @@
         "subject": "Let AI do the heavy lifting",
         "snippet": "Klaviyo’s powerful AI tools make growth simple. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
-      },
-      {
-        "date": "2026-09-10T22:05:00Z",
-        "source": "Shopify",
-        "subject": "He chose Shopify so he could sleep at night",
-        "snippet": "Shopify 96 Ryan had $3K and a problem to solve. ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏",
-        "unread": true
-      },
-      {
-        "date": "2026-09-10T13:45:11Z",
-        "source": "Klaviyo",
-        "subject": "Quick question from the Klaviyo team",
-        "snippet": "Now that you’re set up—how has it actually been? ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-14T01:12:13Z"
+    "last_check_at": "2026-09-14T06:23:29Z"
   }
 }
