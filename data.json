@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-18T11:24:07Z",
+  "updated_at": "2026-09-18T16:29:53Z",
   "shopify": {
-    "sessions_30d": 337,
+    "sessions_30d": 339,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,11 +68,11 @@
     "sessions_by_source_30d": [
       {
         "source": "direct",
-        "sessions": 177
+        "sessions": 178
       },
       {
         "source": "social",
-        "sessions": 147
+        "sessions": 148
       },
       {
         "source": "unknown",
@@ -94,12 +94,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 77.82,
+    "amount_spent_lifetime": 78.69,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "View content",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-18T11:24:07Z",
+    "last_spend_change_at": "2026-09-18T16:29:53Z",
     "ad_set_name": "Sales Ad Set - View Content Optimization"
   },
   "klaviyo": {
@@ -133,6 +133,13 @@
     "unread_count": 5,
     "total_30d": 35,
     "messages": [
+      {
+        "date": "2026-09-18T15:01:50Z",
+        "source": "Klaviyo",
+        "subject": "Growth is good. Transformation is better.",
+        "snippet": "You’re ready—drive results that speak for themselves. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+        "unread": true
+      },
       {
         "date": "2026-09-17T13:30:27Z",
         "source": "Klaviyo",
@@ -181,16 +188,9 @@
         "subject": "Make Crownstitch's reviews visible - takes 2 minutes",
         "snippet": "Two quick steps and every shopper sees your social proof. Get started now (",
         "unread": true
-      },
-      {
-        "date": "2026-09-12T18:58:26Z",
-        "source": "Meta",
-        "subject": "Your ad was approved",
-        "snippet": "Meta for Business Your ad was approved and should begin delivering shortly or when scheduled. ‌ Your ad was approved Hi Jayce, Your ad was approved",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-18T11:24:07Z"
+    "last_check_at": "2026-09-18T16:29:53Z"
   }
 }
