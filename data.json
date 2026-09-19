@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-19T18:05:00Z",
+  "updated_at": "2026-09-19T20:46:58Z",
   "shopify": {
-    "sessions_30d": 375,
+    "sessions_30d": 378,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,11 +68,11 @@
     "sessions_by_source_30d": [
       {
         "source": "direct",
-        "sessions": 189
+        "sessions": 190
       },
       {
         "source": "social",
-        "sessions": 171
+        "sessions": 173
       },
       {
         "source": "unknown",
@@ -94,12 +94,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 82.95,
+    "amount_spent_lifetime": 83.26,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "View content",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-19T18:05:00Z",
+    "last_spend_change_at": "2026-09-19T20:46:58Z",
     "ad_set_name": "Sales Ad Set - View Content Optimization"
   },
   "klaviyo": {
@@ -191,6 +191,6 @@
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-19T18:05:00Z"
+    "last_check_at": "2026-09-19T20:46:58Z"
   }
 }
