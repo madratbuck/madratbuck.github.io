@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-20T16:51:05Z",
+  "updated_at": "2026-09-20T19:30:34Z",
   "shopify": {
-    "sessions_30d": 420,
+    "sessions_30d": 424,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,11 +68,11 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 204
+        "sessions": 207
       },
       {
         "source": "direct",
-        "sessions": 199
+        "sessions": 200
       },
       {
         "source": "unknown",
@@ -94,12 +94,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 86.96,
+    "amount_spent_lifetime": 87.76,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "View content",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-20T16:51:05Z",
+    "last_spend_change_at": "2026-09-20T19:30:34Z",
     "ad_set_name": "Sales Ad Set - View Content Optimization"
   },
   "klaviyo": {
@@ -130,9 +130,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 4,
-    "total_30d": 35,
+    "unread_count": 5,
+    "total_30d": 36,
     "messages": [
+      {
+        "date": "2026-09-20T19:09:57Z",
+        "source": "Customer",
+        "subject": "Connect Judge.me with your favorite tools",
+        "snippet": "See which integrations are worth turning on for your store today. integrations (",
+        "unread": true
+      },
       {
         "date": "2026-09-18T15:01:50Z",
         "source": "Klaviyo",
@@ -181,16 +188,9 @@
         "subject": "Your ad was approved",
         "snippet": "Meta for Business Your ad was approved and should begin delivering shortly or when scheduled. ‌ Your ad was approved Hi Jayce, Your ad was approved",
         "unread": true
-      },
-      {
-        "date": "2026-09-12T19:09:45Z",
-        "source": "Customer",
-        "subject": "Make Crownstitch's reviews visible - takes 2 minutes",
-        "snippet": "Two quick steps and every shopper sees your social proof. Get started now (",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-20T16:51:05Z"
+    "last_check_at": "2026-09-20T19:30:34Z"
   }
 }
