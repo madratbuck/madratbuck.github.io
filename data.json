@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-22T18:58:07Z",
+  "updated_at": "2026-09-22T22:15:28Z",
   "shopify": {
-    "sessions_30d": 502,
+    "sessions_30d": 509,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,7 +68,7 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 277
+        "sessions": 284
       },
       {
         "source": "direct",
@@ -94,12 +94,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 97.55,
+    "amount_spent_lifetime": 98.18,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "View content",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-22T18:58:07Z",
+    "last_spend_change_at": "2026-09-22T22:15:28Z",
     "ad_set_name": "Sales Ad Set - View Content Optimization"
   },
   "klaviyo": {
@@ -130,9 +130,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 4,
-    "total_30d": 38,
+    "unread_count": 5,
+    "total_30d": 39,
     "messages": [
+      {
+        "date": "2026-09-22T19:09:57Z",
+        "source": "Customer",
+        "subject": "Dropshipping from AliExpress? Here's how to get their reviews too",
+        "snippet": "Source winning products and get their reviews into your store automatically. Install AutoDS (",
+        "unread": true
+      },
       {
         "date": "2026-09-22T14:33:56Z",
         "source": "Klaviyo",
@@ -181,16 +188,9 @@
         "subject": "New sign-in to your Shopify account",
         "snippet": "September 14, 2026 New device signed in -------------------- Review activity Review activity (",
         "unread": true
-      },
-      {
-        "date": "2026-09-14T02:25:15Z",
-        "source": "Customer",
-        "subject": "Add Judge.me widgets to your new theme",
-        "snippet": "Hi Jayce, We see you've published a new theme for Crownstitch . To show reviews on your pages, don&#39;t forget to install Judge.me&#39;s widgets in",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-22T18:58:07Z"
+    "last_check_at": "2026-09-22T22:15:28Z"
   }
 }
