@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-23T17:09:59Z",
+  "updated_at": "2026-09-23T20:27:23Z",
   "shopify": {
-    "sessions_30d": 522,
+    "sessions_30d": 525,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,7 +68,7 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 307
+        "sessions": 310
       },
       {
         "source": "direct",
@@ -94,12 +94,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 102.04,
+    "amount_spent_lifetime": 102.87,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "View content",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-23T17:09:59Z",
+    "last_spend_change_at": "2026-09-23T20:27:23Z",
     "ad_set_name": "Sales Ad Set - View Content Optimization"
   },
   "klaviyo": {
@@ -130,9 +130,23 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 4,
-    "total_30d": 40,
+    "unread_count": 5,
+    "total_30d": 42,
     "messages": [
+      {
+        "date": "2026-09-23T18:15:45Z",
+        "source": "Customer",
+        "subject": "Your password has changed.",
+        "snippet": "96 Communication code: StayGoldenPonyBoy Wise. Your account for the world's money &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;",
+        "unread": true
+      },
+      {
+        "date": "2026-09-23T18:14:54Z",
+        "source": "Customer",
+        "subject": "New password requested at 23 September 2026, 18:14 UTC",
+        "snippet": "96 Communication code: StayGoldenPonyBoy Wise. Your account for the world's money &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;",
+        "unread": true
+      },
       {
         "date": "2026-09-23T10:11:19Z",
         "source": "Customer",
@@ -174,23 +188,9 @@
         "subject": "Growth is good. Transformation is better.",
         "snippet": "You’re ready—drive results that speak for themselves. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
-      },
-      {
-        "date": "2026-09-17T13:30:27Z",
-        "source": "Klaviyo",
-        "subject": "Your customers are already creating your best content for you.",
-        "snippet": "Here’s how to actually use it. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
-      },
-      {
-        "date": "2026-09-14T13:30:25Z",
-        "source": "Klaviyo",
-        "subject": "You know what they liked. But do you know who they are?",
-        "snippet": "Social engagement data fills in the gaps your purchase history can’t. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-23T17:09:59Z"
+    "last_check_at": "2026-09-23T20:27:23Z"
   }
 }
