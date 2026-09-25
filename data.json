@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-25T18:41:29Z",
+  "updated_at": "2026-09-25T22:26:45Z",
   "shopify": {
-    "sessions_30d": 575,
+    "sessions_30d": 582,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,11 +68,11 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 362
+        "sessions": 367
       },
       {
         "source": "direct",
-        "sessions": 195
+        "sessions": 197
       },
       {
         "source": "unknown",
@@ -94,12 +94,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 111.55,
+    "amount_spent_lifetime": 112.46,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "View content",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-25T18:41:29Z",
+    "last_spend_change_at": "2026-09-25T22:26:45Z",
     "ad_set_name": "Sales Ad Set - View Content Optimization"
   },
   "klaviyo": {
@@ -130,9 +130,23 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 5,
-    "total_30d": 44,
+    "unread_count": 6,
+    "total_30d": 46,
     "messages": [
+      {
+        "date": "2026-09-25T20:06:30Z",
+        "source": "Shopify",
+        "subject": "Shop Pay Installments for cross-border sales coming soon",
+        "snippet": "Shopify 96 September 25, 2026 Shop Pay Installments is expanding cross-border As early as October 26, 2026, Shop Pay Installments will be available",
+        "unread": true
+      },
+      {
+        "date": "2026-09-25T19:10:01Z",
+        "source": "Customer",
+        "subject": "You're set up — here's how to keep growing",
+        "snippet": "Free resources, a community of merchants like you, and practical tips from our YouTube channel. Explore Academy (",
+        "unread": true
+      },
       {
         "date": "2026-09-25T12:36:05Z",
         "source": "Shopify",
@@ -174,23 +188,9 @@
         "subject": "Dropshipping from AliExpress? Here's how to get their reviews too",
         "snippet": "Source winning products and get their reviews into your store automatically. Install AutoDS (",
         "unread": true
-      },
-      {
-        "date": "2026-09-22T14:33:56Z",
-        "source": "Klaviyo",
-        "subject": "Your guide to 2026 BFCM prep",
-        "snippet": "Backed by data from 205,000+ brands. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
-      },
-      {
-        "date": "2026-09-22T13:30:42Z",
-        "source": "Klaviyo",
-        "subject": "You could be doing a lot more with your social data",
-        "snippet": "Drive smarter marketing with rich engagement data, a social content library, and AI-powered insights. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-25T18:41:29Z"
+    "last_check_at": "2026-09-25T22:26:45Z"
   }
 }
