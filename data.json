@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-30T13:50:22Z",
+  "updated_at": "2026-09-30T19:26:27Z",
   "shopify": {
-    "sessions_30d": 774,
+    "sessions_30d": 780,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,11 +68,11 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 560
+        "sessions": 565
       },
       {
         "source": "direct",
-        "sessions": 196
+        "sessions": 197
       },
       {
         "source": "unknown",
@@ -94,12 +94,12 @@
     "ad_set_status": "Active",
     "daily_budget": 5.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 136.22,
+    "amount_spent_lifetime": 137.19,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "View content",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-09-30T13:50:22Z",
+    "last_spend_change_at": "2026-09-30T19:26:27Z",
     "ad_set_name": "Sales Ad Set - View Content Optimization"
   },
   "klaviyo": {
@@ -130,9 +130,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
   },
   "mail": {
-    "unread_count": 4,
-    "total_30d": 48,
+    "unread_count": 5,
+    "total_30d": 49,
     "messages": [
+      {
+        "date": "2026-09-30T16:41:35Z",
+        "source": "Customer",
+        "subject": "Give your customers more ways to pay.",
+        "snippet": "<span style=\"display:none !important;visibility:hidden;mso-hide:all;opacity:0;\" class=\"acr-preheader\"></span><div class=\"acr-fragment is-locked\"",
+        "unread": true
+      },
       {
         "date": "2026-09-27T22:59:14Z",
         "source": "Klaviyo",
@@ -181,16 +188,9 @@
         "subject": "Your password has changed.",
         "snippet": "96 Communication code: StayGoldenPonyBoy Wise. Your account for the world's money &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;",
         "unread": true
-      },
-      {
-        "date": "2026-09-23T18:14:54Z",
-        "source": "Customer",
-        "subject": "New password requested at 23 September 2026, 18:14 UTC",
-        "snippet": "96 Communication code: StayGoldenPonyBoy Wise. Your account for the world's money &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-09-30T13:50:22Z"
+    "last_check_at": "2026-09-30T19:26:27Z"
   }
 }
