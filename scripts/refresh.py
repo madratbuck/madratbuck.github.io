@@ -621,7 +621,7 @@ def fetch_etsy(prev_etsy):
 
     # --- live listings (Printful "sync products" for the Etsy store) ---
     try:
-        data = printful_get("/store/products", {"limit": 100}, store_id=store_id)
+        data = printful_get("/sync/products", {"limit": 100}, store_id=store_id)
         paging = data.get("paging") or {}
         result["listings"] = int(paging.get("total", len(data.get("result", []) or [])))
     except Exception as e:
