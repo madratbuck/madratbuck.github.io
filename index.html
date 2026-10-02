@@ -481,7 +481,7 @@
     <div class="brand">
       <div class="brand-eyebrow">Crownstitch · Business Pulse</div>
       <h1>Store, ads &amp; email — one screen</h1>
-      <p>Live snapshot pulled from Shopify, Meta Ads Manager and Klaviyo. Refreshes automatically every few hours.</p>
+      <p>Live snapshot pulled from Shopify, Etsy (via Printful), Meta Ads Manager and Klaviyo. Refreshes automatically every few hours.</p>
     </div>
     <div class="status-block">
       <span class="pill neutral" id="overall-pill">Loading…</span>
@@ -500,7 +500,7 @@
 
   <div class="kpis" id="kpi-strip">
     <div class="kpi"><div class="label">Sessions · 30d</div><div class="value" id="kpi-sessions">—</div><div class="sub">Shopify Analytics</div></div>
-    <div class="kpi"><div class="label">Orders · all-time</div><div class="value" id="kpi-orders">—</div><div class="sub">Shopify</div></div>
+    <div class="kpi"><div class="label">Orders · all-time</div><div class="value" id="kpi-orders">—</div><div class="sub" id="kpi-orders-sub">Shopify</div></div>
     <div class="kpi"><div class="label">Conversion · 30d</div><div class="value" id="kpi-cvr">—</div><div class="sub">Sessions → checkout</div></div>
     <div class="kpi"><div class="label">Ad spend · lifetime</div><div class="value" id="kpi-spend">—</div><div class="sub">Meta, this campaign</div></div>
     <div class="kpi"><div class="label">Daily budget</div><div class="value" id="kpi-budget">—</div><div class="sub">Advantage+ campaign</div></div>
@@ -518,6 +518,17 @@
       <div class="row"><span class="k">Active discount</span><span class="v" id="s-discount">—</span></div>
       <div class="row"><span class="k">WELCOME15 redemptions</span><span class="v" id="s-redemptions">—</span></div>
       <div class="panel-note" id="s-note">Store is indexed and live, but hasn't converted a visitor yet — the ad campaign and email flows below are the current push to change that.</div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h2>Etsy</h2><span class="icon">VIA PRINTFUL</span></div>
+      <div class="row"><span class="k">Shop</span><span class="v" id="e-status">—</span></div>
+      <div class="row"><span class="k">Live listings</span><span class="v" id="e-listings">—</span></div>
+      <div class="row"><span class="k">Orders (all-time)</span><span class="v" id="e-orders">—</span></div>
+      <div class="row"><span class="k">Orders (30d)</span><span class="v" id="e-orders30">—</span></div>
+      <div class="row"><span class="k">Revenue (30d)</span><span class="v" id="e-revenue">—</span></div>
+      <div class="row"><span class="k">Printful cost + est. Etsy fees (30d)</span><span class="v" id="e-costs">—</span></div>
+      <div class="panel-note" id="e-note">Etsy orders go straight to Printful for fulfilment, so they're read from Printful rather than Shopify.</div>
     </div>
 
     <div class="panel">
@@ -588,7 +599,7 @@
     <div class="table-scroll">
       <table>
         <thead>
-          <tr><th>Revenue</th><th>Est. COGS</th><th>Ad spend</th><th>Est. payment fees</th><th>Est. net profit</th></tr>
+          <tr><th>Revenue</th><th>Est. COGS</th><th>Ad spend</th><th>Est. fees</th><th>Est. net profit</th></tr>
         </thead>
         <tbody id="profit-row">
           <tr><td colspan="5">Loading…</td></tr>
@@ -847,7 +858,14 @@
     // KPIs
     const sh = d.shopify || {};
     document.getElementById('kpi-sessions').textContent = sh.sessions_30d ?? "—";
-    document.getElementById('kpi-orders').textContent = sh.orders_alltime ?? "—";
+    const et = d.etsy || {};
+    const etsyLive = et.connected === true;
+    if (etsyLive && typeof sh.orders_alltime === 'number') {
+      document.getElementById('kpi-orders').textContent = sh.orders_alltime + (et.orders_alltime || 0);
+      document.getElementById('kpi-orders-sub').textContent = 'Shopify ' + sh.orders_alltime + ' · Etsy ' + (et.orders_alltime || 0);
+    } else {
+      document.getElementById('kpi-orders').textContent = sh.orders_alltime ?? "—";
+    }
     document.getElementById('kpi-cvr').textContent = pct(sh.conversion_rate_30d);
     document.getElementById('kpi-spend').textContent = money(d.ads && d.ads.amount_spent_lifetime, d.ads && d.ads.currency);
     document.getElementById('kpi-budget').textContent = money(d.ads && d.ads.daily_budget, d.ads && d.ads.currency) + '/day';
@@ -869,6 +887,42 @@
       document.getElementById('s-note').textContent = refundedOrders.length + " order(s) have a refund on file (total " + money((sh.refunds && sh.refunds.total_refunded_alltime) || 0, sh.currency) + ") — see Shopify admin for details.";
     } else if (sh.orders_alltime > 0) {
       document.getElementById('s-note').textContent = "The store has recorded real orders — check Shopify admin for fulfillment status.";
+    }
+
+    // Etsy panel (data comes from Printful; absent until the token is set up)
+    {
+      const statusEl = document.getElementById('e-status');
+      statusEl.innerHTML = '';
+      const pill = document.createElement('span');
+      const chk = et.last_check_status;
+      if (etsyLive) {
+        pill.className = 'pill good'; pill.textContent = 'Connected'; if (et.store_name) pill.title = et.store_name;
+      } else if (chk === 'no_etsy_store') {
+        pill.className = 'pill warn'; pill.textContent = 'Not connected to Printful';
+      } else if (chk === 'error') {
+        pill.className = 'pill bad'; pill.textContent = 'Printful check failed';
+      } else {
+        pill.className = 'pill neutral'; pill.textContent = 'Not set up yet';
+      }
+      statusEl.appendChild(pill);
+      const dash = (v) => (v === undefined || v === null) ? '—' : v;
+      document.getElementById('e-listings').textContent = etsyLive ? dash(et.listings) : '—';
+      document.getElementById('e-orders').textContent = etsyLive ? dash(et.orders_alltime) : '—';
+      document.getElementById('e-orders30').textContent = etsyLive ? dash(et.orders_30d) : '—';
+      document.getElementById('e-revenue').textContent = etsyLive ? money(et.revenue_30d || 0, 'CAD') : '—';
+      document.getElementById('e-costs').textContent = etsyLive ? money((et.printful_cost_30d || 0) + (et.fees_est_30d || 0), 'CAD') : '—';
+      const eNote = document.getElementById('e-note');
+      const problems = et.problem_orders || [];
+      if (problems.length > 0) {
+        eNote.textContent = problems.length + ' Etsy order(s) need attention in Printful: ' + problems.map(p => p.order + ' (' + p.status + ')').join(', ') + '.';
+      } else if (etsyLive && (et.orders_alltime || 0) > 0) {
+        const r = (et.recent_orders || [])[0];
+        eNote.textContent = r ? ('Latest Etsy order ' + r.order + ' · ' + fmtDate(r.created) + ' · ' + r.status + '.') : 'Etsy orders are flowing to Printful.';
+      } else if (etsyLive) {
+        eNote.textContent = 'Shop is connected and listings are live — no Etsy orders yet.';
+      } else if (chk === 'no_etsy_store') {
+        eNote.textContent = 'Printful is reachable but no Etsy shop is connected to it yet (Printful > Stores > Etsy).';
+      }
     }
 
     // Traffic sources
