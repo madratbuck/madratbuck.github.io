@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T22:31:22Z",
+  "updated_at": "2026-10-02T23:01:19Z",
   "shopify": {
     "sessions_30d": 850,
     "conversion_rate_30d": 0.0,
@@ -125,9 +125,9 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-02T22:31:22Z",
+    "last_check_at": "2026-10-02T23:01:19Z",
     "last_check_status": "ok",
-    "listings": null,
+    "listings": 6,
     "orders_alltime": 0,
     "orders_30d": 0,
     "revenue_30d": 0.0,
@@ -160,9 +160,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 8,
-    "total_30d": 57,
+    "unread_count": 5,
+    "total_30d": 58,
     "messages": [
+      {
+        "date": "2026-10-02T22:49:11Z",
+        "source": "Customer",
+        "subject": "Money added to your account",
+        "snippet": "96 Communication code: StayGoldenPonyBoy Wise. Your account for the world's money &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;",
+        "unread": true
+      },
       {
         "date": "2026-10-02T21:05:28Z",
         "source": "Customer",
@@ -211,16 +218,9 @@
         "subject": "Safety First",
         "snippet": "[Klaviyo](https://www.klaviyo.com) Sometimes passwords just aren’t enough​More than anything, your security is of the utmost importance to us. That’s",
         "unread": true
-      },
-      {
-        "date": "2026-10-01T19:01:52Z",
-        "source": "Meta",
-        "subject": "Starting October 16, 2026, we'll add product browsing to your ads",
-        "snippet": "Facebook for Business A new way for people to browse your products Starting October 16, 2026, we&#039;ll add product browsing to your existing ads On",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-02T22:31:22Z"
+    "last_check_at": "2026-10-02T23:01:19Z"
   }
 }
