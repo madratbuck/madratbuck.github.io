@@ -2,7 +2,7 @@
 """
 Crownstitch Pulse Dashboard refresh.
 Runs entirely on GitHub Actions' own infrastructure on a schedule.
-Fetches Shopify / Klaviyo / Meta Ads / Gmail data, computes a profit estimate,
+Fetches Shopify / Klaviyo / Meta Ads / Gmail / Etsy-via-Printful data, computes a profit estimate,
 diffs against the previous data.json for urgent-alert conditions, writes the
 new data.json, and (if warranted) emails an action-needed alert.
 The workflow (.github/workflows/refresh.yml) is responsible for committing
@@ -33,6 +33,10 @@ META_AD_ACCOUNT_ID = os.environ["META_AD_ACCOUNT_ID"]
 GMAIL_ADDRESS = os.environ["GMAIL_ADDRESS"]
 GMAIL_APP_PASSWORD = os.environ["GMAIL_APP_PASSWORD"]
 ALERT_EMAILS = [e.strip() for e in os.environ["ALERT_EMAILS"].split(",") if e.strip()]
+# Optional: Printful private token (read-only orders / products / stores).
+# Used to report the Etsy channel, whose orders route straight to Printful and
+# never touch Shopify. If it's missing, the Etsy section is simply skipped.
+PRINTFUL_API_TOKEN = os.environ.get("PRINTFUL_API_TOKEN", "").strip()
 
 DATA_JSON_PATH = os.environ.get("DATA_JSON_PATH", "data.json")
 SHOPIFY_API_VERSION = "2026-07"
@@ -536,6 +540,165 @@ def fetch_meta(prev_ads):
 
 
 # ---------------------------------------------------------------------------
+# Etsy channel (via Printful, which fulfils every Etsy order)
+# ---------------------------------------------------------------------------
+PRINTFUL_API = "https://api.printful.com"
+
+# Etsy fee approximation for a Canadian shop, per order (Etsy's signup fee
+# schedule, Oct 2026): 6.5% transaction (ex tax) + 3% payment processing on the
+# order total INCLUDING tax (~13% HST, so ~3.39% of the pre-tax price) + 0.5%
+# regulatory operating fee (ex tax) = ~10.4%, plus $0.25 processing and ~$0.28
+# CAD (US$0.20) listing renewal when an item sells. Offsite Ads (12-15%) are NOT
+# included — keep them opted out in Etsy, or this will understate fees.
+ETSY_FEE_RATE = 0.104
+ETSY_FEE_PER_ORDER = 0.53
+
+# Printful may bill in USD even when the Etsy shop sells in CAD. Rough rate
+# used only to fold non-CAD amounts into the CAD dashboard totals.
+USD_TO_CAD = 1.38
+
+# Orders in these Printful statuses count as real sales.
+COUNTED_STATUSES = {"pending", "inprocess", "onhold", "partial", "fulfilled", "archived", "inreview"}
+# Statuses worth flagging if an order sits in them.
+PROBLEM_STATUSES = {"failed", "onhold"}
+
+
+def to_cad(amount, currency):
+    try:
+        amount = float(amount or 0)
+    except (TypeError, ValueError):
+        return 0.0
+    cur = (currency or "CAD").upper()
+    if cur == "CAD":
+        return amount
+    if cur == "USD":
+        return amount * USD_TO_CAD
+    return amount  # unknown currency: leave as-is rather than guess
+
+
+def printful_get(path, params=None, store_id=None):
+    headers = {"Authorization": f"Bearer {PRINTFUL_API_TOKEN}"}
+    if store_id:
+        headers["X-PF-Store-Id"] = str(store_id)
+    r = requests.get(f"{PRINTFUL_API}{path}", headers=headers, params=params or {}, timeout=30)
+    r.raise_for_status()
+    return r.json()
+
+
+def fetch_etsy(prev_etsy):
+    """Etsy sales as seen by Printful. Never raises: on any failure it carries
+    the previous snapshot forward and records why in last_check_status."""
+    base = dict(prev_etsy or {})
+    base["last_check_at"] = NOW_ISO
+    base.setdefault("currency", "CAD")
+
+    if not PRINTFUL_API_TOKEN:
+        base["last_check_status"] = "no_token"
+        base.setdefault("connected", False)
+        return base
+
+    try:
+        stores = printful_get("/stores").get("result", []) or []
+    except Exception as e:
+        log(f"Printful stores fetch failed, carrying forward: {e}")
+        base["last_check_status"] = "error"
+        return base
+
+    etsy_store = next((s for s in stores if str(s.get("type", "")).lower() == "etsy"), None)
+    if not etsy_store:
+        base.update({"connected": False, "last_check_status": "no_etsy_store"})
+        return base
+
+    store_id = etsy_store.get("id")
+    result = {
+        "connected": True,
+        "store_id": store_id,
+        "store_name": etsy_store.get("name"),
+        "currency": "CAD",
+        "last_check_at": NOW_ISO,
+        "last_check_status": "ok",
+    }
+
+    # --- live listings (Printful "sync products" for the Etsy store) ---
+    try:
+        data = printful_get("/store/products", {"limit": 100}, store_id=store_id)
+        paging = data.get("paging") or {}
+        result["listings"] = int(paging.get("total", len(data.get("result", []) or [])))
+    except Exception as e:
+        log(f"Printful Etsy products fetch failed: {e}")
+        result["listings"] = base.get("listings")
+
+    # --- orders ---
+    orders = []
+    try:
+        offset = 0
+        while True:
+            data = printful_get("/orders", {"limit": 100, "offset": offset}, store_id=store_id)
+            batch = data.get("result", []) or []
+            orders.extend(batch)
+            total = int((data.get("paging") or {}).get("total", len(orders)))
+            offset += len(batch)
+            if not batch or offset >= total or offset >= 2000:
+                break
+    except Exception as e:
+        log(f"Printful Etsy orders fetch failed, carrying forward order stats: {e}")
+        for k in ("orders_alltime", "orders_30d", "revenue_30d", "printful_cost_30d",
+                  "fees_est_30d", "recent_orders", "problem_orders"):
+            if k in base:
+                result[k] = base[k]
+        result["last_check_status"] = "error"
+        return result
+
+    cutoff = now - timedelta(days=30)
+    orders_alltime = orders_30d = 0
+    revenue_30d = cost_30d = 0.0
+    recent, problems = [], []
+    for o in orders:
+        status = str(o.get("status", "")).lower()
+        created_ts = o.get("created")
+        try:
+            created = datetime.fromtimestamp(int(created_ts), tz=timezone.utc)
+        except (TypeError, ValueError):
+            created = now
+        label = o.get("external_id") or str(o.get("id"))
+        retail = o.get("retail_costs") or {}
+        costs = o.get("costs") or {}
+        retail_cad = to_cad(retail.get("total"), retail.get("currency"))
+        cost_cad = to_cad(costs.get("total"), costs.get("currency"))
+
+        if status in COUNTED_STATUSES:
+            orders_alltime += 1
+            if created >= cutoff:
+                orders_30d += 1
+                revenue_30d += retail_cad
+                cost_30d += cost_cad
+
+        days_open = (now - created).days
+        if status in PROBLEM_STATUSES or (status in {"pending", "draft"} and days_open > 3):
+            problems.append({"order": label, "status": status, "days_open": days_open})
+
+        recent.append({
+            "order": label,
+            "created": created.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "status": status,
+            "total": round(retail_cad, 2),
+        })
+
+    recent.sort(key=lambda r: r["created"], reverse=True)
+    fees_30d = revenue_30d * ETSY_FEE_RATE + orders_30d * ETSY_FEE_PER_ORDER
+    result.update({
+        "orders_alltime": orders_alltime,
+        "orders_30d": orders_30d,
+        "revenue_30d": round(revenue_30d, 2),
+        "printful_cost_30d": round(cost_30d, 2),
+        "fees_est_30d": round(fees_30d, 2),
+        "recent_orders": recent[:5],
+        "problem_orders": problems,
+    })
+    return result
+
+
+# ---------------------------------------------------------------------------
 # Gmail (IMAP read + SMTP send via App Password)
 # ---------------------------------------------------------------------------
 def decode_mime(s):
@@ -697,11 +860,13 @@ def main():
     prev_klaviyo = prev.get("klaviyo", {})
     prev_mail = prev.get("mail", {})
     prev_traffic_sources = prev.get("traffic", {}).get("sessions_by_source_30d", [])
+    prev_etsy = prev.get("etsy", {})
 
     shopify = fetch_shopify(prev_shopify, prev_traffic_sources)
     klaviyo = fetch_klaviyo(prev_klaviyo)
     ads = fetch_meta(prev_ads)
     mail = fetch_gmail()
+    etsy = fetch_etsy(prev_etsy)
 
     if mail.get("_gmail_unavailable"):
         mail = dict(prev_mail)
@@ -715,24 +880,44 @@ def main():
     revenue_30d = shopify.pop("_revenue_30d")
     ad_spend_30d = ads.pop("_ad_spend_30d")
     ad_spend_is_fallback = ads.pop("_ad_spend_30d_is_fallback")
-    cogs_est_30d = round(orders_30d * blended_cogs, 2)
-    payment_fees_est_30d = round(orders_30d * 0.30 + revenue_30d * 0.029, 2)
-    net_profit_est_30d = round(revenue_30d - cogs_est_30d - ad_spend_30d - payment_fees_est_30d, 2)
+    shop_cogs_30d = round(orders_30d * blended_cogs, 2)
+    shop_fees_30d = round(orders_30d * 0.30 + revenue_30d * 0.029, 2)
+
+    # Etsy: real Printful cost per order (not an estimate) + estimated Etsy fees.
+    etsy_revenue_30d = float(etsy.get("revenue_30d") or 0)
+    etsy_orders_30d = int(etsy.get("orders_30d") or 0)
+    etsy_cost_30d = float(etsy.get("printful_cost_30d") or 0)
+    etsy_fees_30d = float(etsy.get("fees_est_30d") or 0)
+
+    total_revenue = revenue_30d + etsy_revenue_30d
+    total_orders = orders_30d + etsy_orders_30d
+    cogs_est_30d = round(shop_cogs_30d + etsy_cost_30d, 2)
+    payment_fees_est_30d = round(shop_fees_30d + etsy_fees_30d, 2)
+    net_profit_est_30d = round(total_revenue - cogs_est_30d - ad_spend_30d - payment_fees_est_30d, 2)
     note = (
         "All figures are estimates for a quick read, not bookkeeping-grade numbers: "
-        "COGS is orders × the blended per-hat Printful cost (not itemized per order), "
-        "and payment fees assume a standard 2.9% + $0.30 CAD per order."
+        "Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), "
+        "and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order."
     )
+    if etsy.get("connected"):
+        note += (" Etsy uses the real Printful cost of each order plus estimated Etsy fees "
+                 "(~10.4% + $0.53/order; Offsite Ads not included).")
     if ad_spend_is_fallback:
-        note += (", and ad spend uses lifetime spend as a stand-in for last-30-day spend "
-                 "since the 30-day figure couldn't be confirmed this run")
+        note += (" Ad spend uses lifetime spend as a stand-in for last-30-day spend "
+                 "since the 30-day figure couldn't be confirmed this run.")
     profit = {
-        "revenue_30d": round(revenue_30d, 2),
-        "orders_30d": orders_30d,
+        "revenue_30d": round(total_revenue, 2),
+        "orders_30d": total_orders,
         "cogs_est_30d": cogs_est_30d,
         "ad_spend_30d": round(ad_spend_30d, 2),
         "payment_fees_est_30d": payment_fees_est_30d,
         "net_profit_est_30d": net_profit_est_30d,
+        "by_channel": {
+            "shopify": {"orders_30d": orders_30d, "revenue_30d": round(revenue_30d, 2),
+                        "cogs_est_30d": shop_cogs_30d, "fees_est_30d": shop_fees_30d},
+            "etsy": {"orders_30d": etsy_orders_30d, "revenue_30d": round(etsy_revenue_30d, 2),
+                     "cogs_30d": round(etsy_cost_30d, 2), "fees_est_30d": round(etsy_fees_30d, 2)},
+        },
         "note": note,
     }
 
@@ -747,6 +932,7 @@ def main():
         "traffic": traffic,
         "ads": {k: v for k, v in ads.items() if not k.startswith("_")},
         "klaviyo": klaviyo,
+        "etsy": etsy,
         "profit": profit,
         "mail": mail,
     }
@@ -754,8 +940,22 @@ def main():
     # ---- urgent-item detection ----
     urgent = []
 
-    if prev_shopify.get("orders_alltime", 0) == 0 and shopify.get("orders_alltime", 0) > 0:
+    prev_total_orders = prev_shopify.get("orders_alltime", 0) + (prev_etsy.get("orders_alltime") or 0)
+    if prev_total_orders == 0 and (shopify.get("orders_alltime", 0) + (etsy.get("orders_alltime") or 0)) > 0:
         urgent.append("\U0001F389 Crownstitch just got its first order!")
+    elif (prev_etsy.get("orders_alltime") or 0) == 0 and (etsy.get("orders_alltime") or 0) > 0:
+        urgent.append("\U0001F389 First Etsy order just came in (Printful is fulfilling it).")
+
+    prev_problem_keys = {(p.get("order"), p.get("status")) for p in prev_etsy.get("problem_orders", []) or []}
+    for p in etsy.get("problem_orders", []) or []:
+        if (p.get("order"), p.get("status")) not in prev_problem_keys:
+            urgent.append(
+                f"Etsy order {p['order']} is '{p['status']}' in Printful ({p['days_open']} days old) "
+                f"— check Printful > Orders."
+            )
+
+    if (prev_etsy.get("connected") and etsy.get("last_check_status") == "no_etsy_store"):
+        urgent.append("Printful no longer sees the Etsy shop as connected — reconnect it in Printful > Stores.")
 
     prev_mail_keys = {(m.get("subject"), m.get("date")) for m in prev_mail.get("messages", [])}
     for m in mail.get("messages", []):
