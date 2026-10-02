@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-02T18:29:07Z",
+  "updated_at": "2026-10-02T22:31:22Z",
   "shopify": {
-    "sessions_30d": 845,
+    "sessions_30d": 850,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -68,11 +68,11 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 630
+        "sessions": 634
       },
       {
         "source": "direct",
-        "sessions": 196
+        "sessions": 197
       },
       {
         "source": "unknown",
@@ -92,15 +92,15 @@
     "campaign_name": "Crownstitch - Advantage+ Shopping",
     "campaign_status": "Active",
     "ad_set_status": "Active",
-    "daily_budget": 5.0,
+    "daily_budget": 10.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 146.67,
+    "amount_spent_lifetime": 146.78,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
-    "conversion_event": "View content",
+    "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-10-02T18:29:07Z",
-    "ad_set_name": "Sales Ad Set - View Content Optimization"
+    "last_spend_change_at": "2026-10-02T22:31:22Z",
+    "ad_set_name": "New Sales Ad Set - Copy"
   },
   "klaviyo": {
     "flows": [
@@ -120,6 +120,22 @@
       }
     ]
   },
+  "etsy": {
+    "connected": true,
+    "store_id": 18846548,
+    "store_name": "CrownstitchCA",
+    "currency": "CAD",
+    "last_check_at": "2026-10-02T22:31:22Z",
+    "last_check_status": "ok",
+    "listings": null,
+    "orders_alltime": 0,
+    "orders_30d": 0,
+    "revenue_30d": 0.0,
+    "printful_cost_30d": 0.0,
+    "fees_est_30d": 0.0,
+    "recent_orders": [],
+    "problem_orders": []
+  },
   "profit": {
     "revenue_30d": 0.0,
     "orders_30d": 0,
@@ -127,12 +143,54 @@
     "ad_spend_30d": 144.78,
     "payment_fees_est_30d": 0.0,
     "net_profit_est_30d": -144.78,
-    "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: COGS is orders × the blended per-hat Printful cost (not itemized per order), and payment fees assume a standard 2.9% + $0.30 CAD per order."
+    "by_channel": {
+      "shopify": {
+        "orders_30d": 0,
+        "revenue_30d": 0.0,
+        "cogs_est_30d": 0.0,
+        "fees_est_30d": 0.0
+      },
+      "etsy": {
+        "orders_30d": 0,
+        "revenue_30d": 0.0,
+        "cogs_30d": 0.0,
+        "fees_est_30d": 0.0
+      }
+    },
+    "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 7,
-    "total_30d": 53,
+    "unread_count": 8,
+    "total_30d": 57,
     "messages": [
+      {
+        "date": "2026-10-02T21:05:28Z",
+        "source": "Customer",
+        "subject": "Payment confirmation for your CA$27 one-time shop set-up fee",
+        "snippet": "Hi Jayce, We've received the one-time CA$27* set-up fee you agreed to pay when opening your Etsy shop, CrownstitchCA. Keep in mind, the pending hold",
+        "unread": true
+      },
+      {
+        "date": "2026-10-02T21:04:08Z",
+        "source": "Customer",
+        "subject": "Your Etsy security settings have been updated.",
+        "snippet": "Hello Jayce, Your security settings have been updated. If this change was made by someone other than yourself, please contact Etsy support. Setting",
+        "unread": true
+      },
+      {
+        "date": "2026-10-02T21:00:44Z",
+        "source": "Customer",
+        "subject": "Your identity has been verified – now finish setting up your shop!",
+        "snippet": "",
+        "unread": true
+      },
+      {
+        "date": "2026-10-02T20:46:19Z",
+        "source": "Customer",
+        "subject": "Confirm your email with this code: 013303",
+        "snippet": "Hi Jayce, Here’s your Etsy verification code: <b>013303</b>. This is valid for 10 minutes. To continue creating your Etsy account, enter this 6-digit",
+        "unread": true
+      },
       {
         "date": "2026-10-02T13:26:08Z",
         "source": "Customer",
@@ -160,37 +218,9 @@
         "subject": "Starting October 16, 2026, we'll add product browsing to your ads",
         "snippet": "Facebook for Business A new way for people to browse your products Starting October 16, 2026, we&#039;ll add product browsing to your existing ads On",
         "unread": true
-      },
-      {
-        "date": "2026-09-30T16:41:35Z",
-        "source": "Customer",
-        "subject": "Give your customers more ways to pay.",
-        "snippet": "<span style=\"display:none !important;visibility:hidden;mso-hide:all;opacity:0;\" class=\"acr-preheader\"></span><div class=\"acr-fragment is-locked\"",
-        "unread": true
-      },
-      {
-        "date": "2026-09-27T22:59:14Z",
-        "source": "Klaviyo",
-        "subject": "[Webinar] More campaigns, fewer late nights. Here’s how.",
-        "snippet": "Don't miss Drive more revenue with Klaviyo AI (BFCM edition) ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
-      },
-      {
-        "date": "2026-09-26T15:31:41Z",
-        "source": "Klaviyo",
-        "subject": "Dermalogia’s story: 21% CRM revenue growth",
-        "snippet": "Plus, what’s new at Klaviyo. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
-      },
-      {
-        "date": "2026-09-25T20:06:30Z",
-        "source": "Shopify",
-        "subject": "Shop Pay Installments for cross-border sales coming soon",
-        "snippet": "Shopify 96 September 25, 2026 Shop Pay Installments is expanding cross-border As early as October 26, 2026, Shop Pay Installments will be available",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-02T18:29:07Z"
+    "last_check_at": "2026-10-02T22:31:22Z"
   }
 }
