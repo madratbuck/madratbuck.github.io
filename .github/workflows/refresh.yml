@@ -43,6 +43,7 @@ jobs:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           ALERT_EMAILS: ${{ secrets.ALERT_EMAILS }}
+          PRINTFUL_API_TOKEN: ${{ secrets.PRINTFUL_API_TOKEN }}
         run: python scripts/refresh.py
 
       - name: Commit and push data.json
