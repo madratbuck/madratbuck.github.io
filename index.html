@@ -576,11 +576,11 @@
   </div>
 
   <div class="ledger">
-    <div class="panel-head"><h2>Unit economics</h2><span class="icon">PRINTFUL COGS</span></div>
+    <div class="panel-head"><h2>Unit economics</h2><span class="icon">TRUE COST</span></div>
     <div class="table-scroll">
       <table>
         <thead>
-          <tr><th></th><th>Product</th><th>Retail</th><th>Printful cost</th><th>Margin</th><th>Margin %</th></tr>
+          <tr><th></th><th>Product</th><th>Retail</th><th>Total cost*</th><th>Profit / hat</th><th>Margin %</th></tr>
         </thead>
         <tbody id="econ-rows">
           <tr><td colspan="6">Loading…</td></tr>
@@ -588,10 +588,10 @@
       </table>
     </div>
     <div class="econ-stats">
-      <div><div class="stat-value" id="econ-blended">—</div><div class="stat-label">Blended margin / hat</div></div>
+      <div><div class="stat-value" id="econ-blended">—</div><div class="stat-label">Blended profit / hat</div></div>
       <div><div class="stat-value" id="econ-breakeven">—</div><div class="stat-label">Hats/month to cover ad spend</div></div>
     </div>
-    <div class="panel-note">Margin is retail price minus Printful's product cost only — before Meta ad spend, Shopify/payment processing fees, or shipping. Shipping was a net loss on every order before 2026-09-12 (Printful's dropship charge exceeded what customers paid at checkout on the Richardson-hat listings) — resolved by making shipping free storefront-wide and folding the cost into the price increase reflected above.</div>
+    <div class="panel-note">*Total cost = Printful hat + embroidery + ~$10.89 Printful shipping to Canada (free to the buyer) + Shopify payment fees (2.9% + $0.30). Profit is before Meta ad spend. Etsy sales net roughly $4 less per hat (Etsy fees ≈10.4% + $0.53), and Etsy Offsite Ads sales lose another 15% of the price. Shipping was a net loss on every order before 2026-09-12 (Printful's dropship charge exceeded what customers paid at checkout on the Richardson-hat listings) — resolved by making shipping free storefront-wide and folding the cost into the price increase reflected above.</div>
   </div>
 
   <div class="ledger">
@@ -995,16 +995,17 @@
     } else {
       let totalMargin = 0;
       withCogs.forEach(p => {
-        const margin = p.price - p.cogs;
+        const totalCost = p.cogs + 10.89 + p.price * 0.029 + 0.30;
+        const margin = p.price - totalCost;
         const marginPct = p.price ? margin / p.price : 0;
         totalMargin += margin;
-        const cls = marginPct >= 0.35 ? 'margin-good' : (marginPct >= 0.20 ? 'margin-ok' : 'margin-low');
+        const cls = marginPct >= 0.30 ? 'margin-good' : (marginPct >= 0.15 ? 'margin-ok' : 'margin-low');
         const tr = document.createElement('tr');
         const src = IMAGES[p.title];
         const thumbCell = src
           ? `<img class="thumb" src="${src}" alt="${p.title}" loading="lazy">`
           : `<div class="thumb-placeholder">N/A</div>`;
-        tr.innerHTML = `<td class="prod-thumb">${thumbCell}</td><td class="prod-title">${p.title}</td><td class="num">${money(p.price, sh.currency)}</td><td class="num">${money(p.cogs, sh.currency)}</td><td class="num">${money(margin, sh.currency)}</td><td class="num ${cls}">${pct(marginPct)}</td>`;
+        tr.innerHTML = `<td class="prod-thumb">${thumbCell}</td><td class="prod-title">${p.title}</td><td class="num">${money(p.price, sh.currency)}</td><td class="num">${money(totalCost, sh.currency)}</td><td class="num">${money(margin, sh.currency)}</td><td class="num ${cls}">${pct(marginPct)}</td>`;
         econRows.appendChild(tr);
       });
       const blended = totalMargin / withCogs.length;
