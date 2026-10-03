@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-03T18:00:03Z",
+  "updated_at": "2026-10-03T21:23:32Z",
   "shopify": {
-    "sessions_30d": 833,
+    "sessions_30d": 841,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -52,6 +52,54 @@
         "variants": 4,
         "status": "Active",
         "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Beer League Est. 11:15 PM 5-Panel Hat",
+        "price": 44.99,
+        "cogs": null,
+        "variants": 5,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Puck Bunny Script 5-Panel Hat",
+        "price": 44.99,
+        "cogs": null,
+        "variants": 2,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Puck Bunny Logo 5-Panel Hat",
+        "price": 44.99,
+        "cogs": null,
+        "variants": 2,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Beer League All Star Foam Trucker Hat",
+        "price": 44.99,
+        "cogs": null,
+        "variants": 3,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Dangle Wizard Mascot Foam Trucker Hat",
+        "price": 44.99,
+        "cogs": null,
+        "variants": 4,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Dangle Wizard Foam Trucker Hat",
+        "price": 44.99,
+        "cogs": null,
+        "variants": 4,
+        "status": "Active",
+        "stock": "In stock (dropship)"
       }
     ],
     "discount_code": "WELCOME15",
@@ -68,11 +116,11 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 629
+        "sessions": 633
       },
       {
         "source": "direct",
-        "sessions": 185
+        "sessions": 188
       },
       {
         "source": "unknown",
@@ -80,7 +128,7 @@
       },
       {
         "source": "search",
-        "sessions": 3
+        "sessions": 4
       },
       {
         "source": "invalid",
@@ -94,12 +142,12 @@
     "ad_set_status": "Active",
     "daily_budget": 10.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 150.95,
+    "amount_spent_lifetime": 157.16,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-10-03T18:00:03Z",
+    "last_spend_change_at": "2026-10-03T21:23:32Z",
     "ad_set_name": "New Sales Ad Set - Copy"
   },
   "klaviyo": {
@@ -125,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-03T18:00:03Z",
+    "last_check_at": "2026-10-03T21:23:32Z",
     "last_check_status": "ok",
     "listings": 6,
     "orders_alltime": 0,
@@ -161,8 +209,15 @@
   },
   "mail": {
     "unread_count": 1,
-    "total_30d": 50,
+    "total_30d": 51,
     "messages": [
+      {
+        "date": "2026-10-03T20:17:00Z",
+        "source": "Customer",
+        "subject": "CrownstitchCA, you’re officially open for business!",
+        "snippet": "Start bringing buyers to your shop. Etsy (",
+        "unread": true
+      },
       {
         "date": "2026-10-03T15:31:52Z",
         "source": "Klaviyo",
@@ -211,16 +266,9 @@
         "subject": "Superpower your account with Xero, FreeAgent and more",
         "snippet": "accounting-sync-em1-new-carla 96 Easily connect the tools you need to grow your business ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿",
         "unread": true
-      },
-      {
-        "date": "2026-10-02T12:46:34Z",
-        "source": "Klaviyo",
-        "subject": "Secure your account with MFA",
-        "snippet": "[Klaviyo](https://www.klaviyo.com) Secure your account with MFA Protect your account and data by adding an additional level of security with",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-03T18:00:03Z"
+    "last_check_at": "2026-10-03T21:23:32Z"
   }
 }
