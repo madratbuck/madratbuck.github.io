@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-04T17:40:14Z",
+  "updated_at": "2026-10-04T21:34:46Z",
   "shopify": {
-    "sessions_30d": 922,
+    "sessions_30d": 923,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -120,7 +120,7 @@
       },
       {
         "source": "direct",
-        "sessions": 205
+        "sessions": 206
       },
       {
         "source": "unknown",
@@ -142,12 +142,12 @@
     "ad_set_status": "Active",
     "daily_budget": 10.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 160.52,
+    "amount_spent_lifetime": 162.5,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-10-04T17:40:14Z",
+    "last_spend_change_at": "2026-10-04T21:34:46Z",
     "ad_set_name": "New Sales Ad Set - Copy"
   },
   "klaviyo": {
@@ -173,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-04T17:40:14Z",
+    "last_check_at": "2026-10-04T21:34:46Z",
     "last_check_status": "ok",
     "listings": 12,
     "orders_alltime": 0,
@@ -208,7 +208,7 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 2,
+    "unread_count": 0,
     "total_30d": 50,
     "messages": [
       {
@@ -269,6 +269,6 @@
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-04T17:40:14Z"
+    "last_check_at": "2026-10-04T21:34:46Z"
   }
 }
