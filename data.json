@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-04T00:43:00Z",
+  "updated_at": "2026-10-04T07:00:08Z",
   "shopify": {
-    "sessions_30d": 843,
+    "sessions_30d": 915,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -116,11 +116,11 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 635
+        "sessions": 688
       },
       {
         "source": "direct",
-        "sessions": 188
+        "sessions": 204
       },
       {
         "source": "unknown",
@@ -128,7 +128,7 @@
       },
       {
         "source": "search",
-        "sessions": 4
+        "sessions": 7
       },
       {
         "source": "invalid",
@@ -142,12 +142,12 @@
     "ad_set_status": "Active",
     "daily_budget": 10.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 159.47,
+    "amount_spent_lifetime": 160.08,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-10-04T00:43:00Z",
+    "last_spend_change_at": "2026-10-04T07:00:08Z",
     "ad_set_name": "New Sales Ad Set - Copy"
   },
   "klaviyo": {
@@ -173,9 +173,9 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-04T00:43:00Z",
+    "last_check_at": "2026-10-04T07:00:08Z",
     "last_check_status": "ok",
-    "listings": 6,
+    "listings": 12,
     "orders_alltime": 0,
     "orders_30d": 0,
     "revenue_30d": 0.0,
@@ -188,9 +188,9 @@
     "revenue_30d": 0.0,
     "orders_30d": 0,
     "cogs_est_30d": 0.0,
-    "ad_spend_30d": 146.9,
+    "ad_spend_30d": 155.69,
     "payment_fees_est_30d": 0.0,
-    "net_profit_est_30d": -146.9,
+    "net_profit_est_30d": -155.69,
     "by_channel": {
       "shopify": {
         "orders_30d": 0,
@@ -208,9 +208,23 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 0,
-    "total_30d": 51,
+    "unread_count": 1,
+    "total_30d": 52,
     "messages": [
+      {
+        "date": "2026-10-04T05:28:27Z",
+        "source": "Meta",
+        "subject": "Your ad was approved",
+        "snippet": "Meta for Business Your ad was approved and should begin delivering shortly or when scheduled. ‌ Your ad was approved Hi Jayce, Your ad was approved",
+        "unread": true
+      },
+      {
+        "date": "2026-10-04T05:26:06Z",
+        "source": "Customer",
+        "subject": "Add Judge.me widgets to your new theme",
+        "snippet": "Hi Jayce, We see you've published a new theme for Crownstitch . To show reviews on your pages, don&#39;t forget to install Judge.me&#39;s widgets in",
+        "unread": true
+      },
       {
         "date": "2026-10-03T20:17:00Z",
         "source": "Customer",
@@ -252,23 +266,9 @@
         "subject": "Your identity has been verified – now finish setting up your shop!",
         "snippet": "",
         "unread": true
-      },
-      {
-        "date": "2026-10-02T20:46:19Z",
-        "source": "Customer",
-        "subject": "Confirm your email with this code: 013303",
-        "snippet": "Hi Jayce, Here’s your Etsy verification code: <b>013303</b>. This is valid for 10 minutes. To continue creating your Etsy account, enter this 6-digit",
-        "unread": true
-      },
-      {
-        "date": "2026-10-02T13:26:08Z",
-        "source": "Customer",
-        "subject": "Superpower your account with Xero, FreeAgent and more",
-        "snippet": "accounting-sync-em1-new-carla 96 Easily connect the tools you need to grow your business ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-04T00:43:00Z"
+    "last_check_at": "2026-10-04T07:00:08Z"
   }
 }
