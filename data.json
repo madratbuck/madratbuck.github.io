@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-05T16:07:40Z",
+  "updated_at": "2026-10-05T22:43:02Z",
   "shopify": {
-    "sessions_30d": 925,
+    "sessions_30d": 932,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -116,11 +116,11 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 692
+        "sessions": 697
       },
       {
         "source": "direct",
-        "sessions": 204
+        "sessions": 206
       },
       {
         "source": "unknown",
@@ -142,12 +142,12 @@
     "ad_set_status": "Active",
     "daily_budget": 10.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 168.5,
+    "amount_spent_lifetime": 171.94,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-10-05T16:07:40Z",
+    "last_spend_change_at": "2026-10-05T22:43:02Z",
     "ad_set_name": "New Sales Ad Set - Copy"
   },
   "klaviyo": {
@@ -173,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-05T16:07:40Z",
+    "last_check_at": "2026-10-05T22:43:02Z",
     "last_check_status": "ok",
     "listings": 12,
     "orders_alltime": 0,
@@ -208,9 +208,23 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 0,
-    "total_30d": 51,
+    "unread_count": 1,
+    "total_30d": 52,
     "messages": [
+      {
+        "date": "2026-10-05T19:31:12Z",
+        "source": "Customer",
+        "subject": "Let’s personalise your shop! ✨",
+        "snippet": "Show what makes your shop special with a logo, banner, story and photo.+ Etsy (",
+        "unread": true
+      },
+      {
+        "date": "2026-10-05T16:41:55Z",
+        "source": "Customer",
+        "subject": "CrownstitchCA: Start the week",
+        "snippet": "Your plan for the week of 5 October 2026 Etsy (",
+        "unread": true
+      },
       {
         "date": "2026-10-05T00:02:11Z",
         "source": "Meta",
@@ -252,23 +266,9 @@
         "subject": "Add Judge.me widgets to your new theme",
         "snippet": "Hi Jayce, We see you've published a new theme for Crownstitch . To show reviews on your pages, don&#39;t forget to install Judge.me&#39;s widgets in",
         "unread": true
-      },
-      {
-        "date": "2026-10-03T20:17:00Z",
-        "source": "Customer",
-        "subject": "CrownstitchCA, you’re officially open for business!",
-        "snippet": "Start bringing buyers to your shop. Etsy (",
-        "unread": true
-      },
-      {
-        "date": "2026-10-03T15:31:52Z",
-        "source": "Klaviyo",
-        "subject": "Meta’s new AI agent now speaks Klaviyo",
-        "snippet": "Plus, what’s new at Klaviyo. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-05T16:07:40Z"
+    "last_check_at": "2026-10-05T22:43:02Z"
   }
 }
