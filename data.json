@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-05T01:00:41Z",
+  "updated_at": "2026-10-05T07:09:03Z",
   "shopify": {
-    "sessions_30d": 926,
+    "sessions_30d": 924,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -120,7 +120,7 @@
       },
       {
         "source": "direct",
-        "sessions": 206
+        "sessions": 204
       },
       {
         "source": "unknown",
@@ -142,12 +142,12 @@
     "ad_set_status": "Active",
     "daily_budget": 10.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 165.49,
+    "amount_spent_lifetime": 167.24,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-10-05T01:00:41Z",
+    "last_spend_change_at": "2026-10-05T07:09:03Z",
     "ad_set_name": "New Sales Ad Set - Copy"
   },
   "klaviyo": {
@@ -173,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-05T01:00:41Z",
+    "last_check_at": "2026-10-05T07:09:03Z",
     "last_check_status": "ok",
     "listings": 12,
     "orders_alltime": 0,
@@ -188,9 +188,9 @@
     "revenue_30d": 0.0,
     "orders_30d": 0,
     "cogs_est_30d": 0.0,
-    "ad_spend_30d": 155.69,
+    "ad_spend_30d": 160.06,
     "payment_fees_est_30d": 0.0,
-    "net_profit_est_30d": -155.69,
+    "net_profit_est_30d": -160.06,
     "by_channel": {
       "shopify": {
         "orders_30d": 0,
@@ -208,7 +208,7 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 2,
+    "unread_count": 0,
     "total_30d": 52,
     "messages": [
       {
@@ -269,6 +269,6 @@
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-05T01:00:41Z"
+    "last_check_at": "2026-10-05T07:09:03Z"
   }
 }
