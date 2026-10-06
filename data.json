@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-05T22:43:02Z",
+  "updated_at": "2026-10-06T03:04:16Z",
   "shopify": {
-    "sessions_30d": 932,
+    "sessions_30d": 938,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
       {
-        "title": "Crownstitch Groundhog Classic Embroidered Rope Hat",
+        "title": "Groundhog Embroidered Rope Hat",
         "price": 49.99,
-        "cogs": 28.0,
+        "cogs": null,
         "variants": 2,
         "status": "Active",
         "stock": "In stock (dropship)"
@@ -46,38 +46,6 @@
         "stock": "In stock (dropship)"
       },
       {
-        "title": "Cash Out Poker Chip Embroidered 5 Panel Cap",
-        "price": 44.99,
-        "cogs": 22.0,
-        "variants": 4,
-        "status": "Active",
-        "stock": "In stock (dropship)"
-      },
-      {
-        "title": "Beer League Est. 11:15 PM 5-Panel Hat",
-        "price": 44.99,
-        "cogs": null,
-        "variants": 5,
-        "status": "Active",
-        "stock": "In stock (dropship)"
-      },
-      {
-        "title": "Puck Bunny Script 5-Panel Hat",
-        "price": 44.99,
-        "cogs": null,
-        "variants": 2,
-        "status": "Active",
-        "stock": "In stock (dropship)"
-      },
-      {
-        "title": "Puck Bunny Logo 5-Panel Hat",
-        "price": 44.99,
-        "cogs": null,
-        "variants": 2,
-        "status": "Active",
-        "stock": "In stock (dropship)"
-      },
-      {
         "title": "Beer League All Star Foam Trucker Hat",
         "price": 44.99,
         "cogs": null,
@@ -100,6 +68,38 @@
         "variants": 4,
         "status": "Active",
         "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Cash Out Poker Chip Embroidered Flat Bill Cap",
+        "price": 44.99,
+        "cogs": null,
+        "variants": 2,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Puck Bunny Script Flat Bill Cap",
+        "price": 44.99,
+        "cogs": null,
+        "variants": 2,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Puck Bunny Logo Flat Bill Cap",
+        "price": 44.99,
+        "cogs": null,
+        "variants": 2,
+        "status": "Active",
+        "stock": "In stock (dropship)"
+      },
+      {
+        "title": "Beer League Est. 11:15 PM Foam Trucker Hat",
+        "price": 44.99,
+        "cogs": null,
+        "variants": 5,
+        "status": "Active",
+        "stock": "In stock (dropship)"
       }
     ],
     "discount_code": "WELCOME15",
@@ -120,7 +120,7 @@
       },
       {
         "source": "direct",
-        "sessions": 206
+        "sessions": 212
       },
       {
         "source": "unknown",
@@ -138,16 +138,16 @@
   },
   "ads": {
     "campaign_name": "Crownstitch - Advantage+ Shopping",
-    "campaign_status": "Active",
-    "ad_set_status": "Active",
+    "campaign_status": "Paused",
+    "ad_set_status": "Campaign_paused",
     "daily_budget": 10.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 171.94,
+    "amount_spent_lifetime": 172.38,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-10-05T22:43:02Z",
+    "last_spend_change_at": "2026-10-06T03:04:16Z",
     "ad_set_name": "New Sales Ad Set - Copy"
   },
   "klaviyo": {
@@ -173,9 +173,9 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-05T22:43:02Z",
+    "last_check_at": "2026-10-06T03:04:16Z",
     "last_check_status": "ok",
-    "listings": 12,
+    "listings": 16,
     "orders_alltime": 0,
     "orders_30d": 0,
     "revenue_30d": 0.0,
@@ -208,7 +208,7 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 1,
+    "unread_count": 0,
     "total_30d": 52,
     "messages": [
       {
@@ -269,6 +269,6 @@
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-05T22:43:02Z"
+    "last_check_at": "2026-10-06T03:04:16Z"
   }
 }
