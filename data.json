@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-06T03:04:16Z",
+  "updated_at": "2026-10-06T10:27:15Z",
   "shopify": {
-    "sessions_30d": 938,
+    "sessions_30d": 927,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -116,11 +116,11 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 697
+        "sessions": 687
       },
       {
         "source": "direct",
-        "sessions": 212
+        "sessions": 211
       },
       {
         "source": "unknown",
@@ -142,12 +142,12 @@
     "ad_set_status": "Campaign_paused",
     "daily_budget": 10.0,
     "currency": "CAD",
-    "amount_spent_lifetime": 172.38,
+    "amount_spent_lifetime": 172.39,
     "pixel_name": "Shopify: wag1ufeh 1783389213's pixel",
     "pixel_id": "1054431213595120",
     "conversion_event": "Purchase",
     "review_status": "Approved",
-    "last_spend_change_at": "2026-10-06T03:04:16Z",
+    "last_spend_change_at": "2026-10-06T10:27:15Z",
     "ad_set_name": "New Sales Ad Set - Copy"
   },
   "klaviyo": {
@@ -173,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-06T03:04:16Z",
+    "last_check_at": "2026-10-06T10:27:15Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -188,9 +188,9 @@
     "revenue_30d": 0.0,
     "orders_30d": 0,
     "cogs_est_30d": 0.0,
-    "ad_spend_30d": 160.21,
+    "ad_spend_30d": 157.61,
     "payment_fees_est_30d": 0.0,
-    "net_profit_est_30d": -160.21,
+    "net_profit_est_30d": -157.61,
     "by_channel": {
       "shopify": {
         "orders_30d": 0,
@@ -209,7 +209,7 @@
   },
   "mail": {
     "unread_count": 0,
-    "total_30d": 52,
+    "total_30d": 51,
     "messages": [
       {
         "date": "2026-10-05T19:31:12Z",
@@ -269,6 +269,6 @@
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-06T03:04:16Z"
+    "last_check_at": "2026-10-06T10:27:15Z"
   }
 }
