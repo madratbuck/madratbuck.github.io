@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-08T09:05:23Z",
+  "updated_at": "2026-10-08T16:34:37Z",
   "shopify": {
-    "sessions_30d": 918,
+    "sessions_30d": 919,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -120,7 +120,7 @@
       },
       {
         "source": "direct",
-        "sessions": 209
+        "sessions": 210
       },
       {
         "source": "unknown",
@@ -173,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-08T09:05:23Z",
+    "last_check_at": "2026-10-08T16:34:37Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -208,9 +208,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 0,
+    "unread_count": 1,
     "total_30d": 51,
     "messages": [
+      {
+        "date": "2026-10-08T13:25:22Z",
+        "source": "Customer",
+        "subject": "Connect with Xero, QuickBooks and more",
+        "snippet": "accounting-sync-new-em2-FAQ-carla 96 Bring your business apps together ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿",
+        "unread": true
+      },
       {
         "date": "2026-10-07T19:32:55Z",
         "source": "Customer",
@@ -259,16 +266,9 @@
         "subject": "[Webinar] Put AI to work this BFCM",
         "snippet": "Don’t miss Scale your strategy with Klaviyo’s AI Customer Agent ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
-      },
-      {
-        "date": "2026-10-04T17:10:06Z",
-        "source": "Customer",
-        "subject": "Money received from REID BARBER",
-        "snippet": "96 Communication code: StayGoldenPonyBoy Wise. Your account for the world's money &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-08T09:05:23Z"
+    "last_check_at": "2026-10-08T16:34:37Z"
   }
 }
