@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T16:20:53Z",
+  "updated_at": "2026-10-09T21:44:15Z",
   "shopify": {
     "sessions_30d": 913,
     "conversion_rate_30d": 0.0,
@@ -173,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-09T16:20:53Z",
+    "last_check_at": "2026-10-09T21:44:15Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -209,8 +209,22 @@
   },
   "mail": {
     "unread_count": 1,
-    "total_30d": 51,
+    "total_30d": 53,
     "messages": [
+      {
+        "date": "2026-10-09T19:36:48Z",
+        "source": "Customer",
+        "subject": "Help buyers know what to expect 🤝",
+        "snippet": "Set your shop policies and offer great customer service. Etsy (",
+        "unread": true
+      },
+      {
+        "date": "2026-10-09T16:24:40Z",
+        "source": "Customer",
+        "subject": "CrownstitchCA: This week in your shop",
+        "snippet": "Week ending 09th October 2026 Etsy (",
+        "unread": true
+      },
       {
         "date": "2026-10-09T12:47:31Z",
         "source": "Klaviyo",
@@ -252,23 +266,9 @@
         "subject": "Let’s personalise your shop! ✨",
         "snippet": "Show what makes your shop special with a logo, banner, story and photo.+ Etsy (",
         "unread": true
-      },
-      {
-        "date": "2026-10-05T16:41:55Z",
-        "source": "Customer",
-        "subject": "CrownstitchCA: Start the week",
-        "snippet": "Your plan for the week of 5 October 2026 Etsy (",
-        "unread": true
-      },
-      {
-        "date": "2026-10-05T00:02:11Z",
-        "source": "Meta",
-        "subject": "Your Meta ads receipt (Account ID: 1041318392007265)",
-        "snippet": "Hi Jayce, This is not an invoice Payment summaryAmount billed: CA$28.25 CAD Date range: Oct 1, 2026, 12:00 AM - Oct 4, 2026, 8:01 PM Product type:",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-09T16:20:53Z"
+    "last_check_at": "2026-10-09T21:44:15Z"
   }
 }
