@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-09T09:15:31Z",
+  "updated_at": "2026-10-09T16:20:53Z",
   "shopify": {
-    "sessions_30d": 912,
+    "sessions_30d": 913,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -128,7 +128,7 @@
       },
       {
         "source": "search",
-        "sessions": 13
+        "sessions": 14
       },
       {
         "source": "invalid",
@@ -173,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-09T09:15:31Z",
+    "last_check_at": "2026-10-09T16:20:53Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -208,9 +208,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 0,
+    "unread_count": 1,
     "total_30d": 51,
     "messages": [
+      {
+        "date": "2026-10-09T12:47:31Z",
+        "source": "Klaviyo",
+        "subject": "Set up MFA for your Klaviyo account",
+        "snippet": "[Klaviyo](https://www.klaviyo.com) Secure your account today Don’t forget to set up MFA for your Klaviyo account. Set up only takes a few minutes and",
+        "unread": true
+      },
       {
         "date": "2026-10-08T13:25:22Z",
         "source": "Customer",
@@ -259,16 +266,9 @@
         "subject": "Your Meta ads receipt (Account ID: 1041318392007265)",
         "snippet": "Hi Jayce, This is not an invoice Payment summaryAmount billed: CA$28.25 CAD Date range: Oct 1, 2026, 12:00 AM - Oct 4, 2026, 8:01 PM Product type:",
         "unread": true
-      },
-      {
-        "date": "2026-10-04T23:09:51Z",
-        "source": "Klaviyo",
-        "subject": "[Webinar] Put AI to work this BFCM",
-        "snippet": "Don’t miss Scale your strategy with Klaviyo’s AI Customer Agent ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-09T09:15:31Z"
+    "last_check_at": "2026-10-09T16:20:53Z"
   }
 }
