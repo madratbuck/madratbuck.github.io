@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-10T23:37:15Z",
+  "updated_at": "2026-10-11T05:55:55Z",
   "shopify": {
-    "sessions_30d": 911,
+    "sessions_30d": 908,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -116,11 +116,11 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 677
+        "sessions": 675
       },
       {
         "source": "direct",
-        "sessions": 205
+        "sessions": 204
       },
       {
         "source": "unknown",
@@ -173,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-10T23:37:15Z",
+    "last_check_at": "2026-10-11T05:55:55Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -188,9 +188,9 @@
     "revenue_30d": 0.0,
     "orders_30d": 0,
     "cogs_est_30d": 0.0,
-    "ad_spend_30d": 135.51,
+    "ad_spend_30d": 131.35,
     "payment_fees_est_30d": 0.0,
-    "net_profit_est_30d": -135.51,
+    "net_profit_est_30d": -131.35,
     "by_channel": {
       "shopify": {
         "orders_30d": 0,
@@ -269,6 +269,6 @@
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-10T23:37:15Z"
+    "last_check_at": "2026-10-11T05:55:55Z"
   }
 }
