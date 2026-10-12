@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-12T09:20:28Z",
+  "updated_at": "2026-10-12T19:50:50Z",
   "shopify": {
-    "sessions_30d": 899,
+    "sessions_30d": 900,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -120,7 +120,7 @@
       },
       {
         "source": "direct",
-        "sessions": 198
+        "sessions": 199
       },
       {
         "source": "unknown",
@@ -173,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-12T09:20:28Z",
+    "last_check_at": "2026-10-12T19:50:50Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -208,9 +208,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 0,
-    "total_30d": 52,
+    "unread_count": 1,
+    "total_30d": 51,
     "messages": [
+      {
+        "date": "2026-10-12T16:31:44Z",
+        "source": "Customer",
+        "subject": "CrownstitchCA: Start the week",
+        "snippet": "Your plan for the week of 12 October 2026 Etsy (",
+        "unread": true
+      },
       {
         "date": "2026-10-11T23:05:30Z",
         "source": "Klaviyo",
@@ -259,16 +266,9 @@
         "subject": "Connect with Xero, QuickBooks and more",
         "snippet": "accounting-sync-new-em2-FAQ-carla 96 Bring your business apps together ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿",
         "unread": true
-      },
-      {
-        "date": "2026-10-07T19:32:55Z",
-        "source": "Customer",
-        "subject": "We’re here to help when you need it🛟",
-        "snippet": "Get 24/7 support, plus guidance from the Help Centre and Seller Handbook. Etsy (",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-12T09:20:28Z"
+    "last_check_at": "2026-10-12T19:50:50Z"
   }
 }
