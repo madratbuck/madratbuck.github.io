@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-14T18:41:08Z",
+  "updated_at": "2026-10-14T22:20:23Z",
   "shopify": {
-    "sessions_30d": 817,
+    "sessions_30d": 818,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -120,7 +120,7 @@
       },
       {
         "source": "direct",
-        "sessions": 128
+        "sessions": 129
       },
       {
         "source": "unknown",
@@ -173,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-14T18:41:08Z",
+    "last_check_at": "2026-10-14T22:20:23Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -208,9 +208,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 2,
-    "total_30d": 50,
+    "unread_count": 1,
+    "total_30d": 51,
     "messages": [
+      {
+        "date": "2026-10-14T18:42:32Z",
+        "source": "Customer",
+        "subject": "Your weekly listing performance",
+        "snippet": "See what’s working and tips to bring in more buyers. Etsy (",
+        "unread": true
+      },
       {
         "date": "2026-10-14T18:03:48Z",
         "source": "Customer",
@@ -259,16 +266,9 @@
         "subject": "Connect with the Etsy Community 😊",
         "snippet": "Share ideas, get advice, and connect with other sellers. Etsy (",
         "unread": true
-      },
-      {
-        "date": "2026-10-10T15:32:55Z",
-        "source": "Klaviyo",
-        "subject": "How top brands hit $13.70 per cart email recipient",
-        "snippet": "Plus, what’s new at Klaviyo. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-14T18:41:08Z"
+    "last_check_at": "2026-10-14T22:20:23Z"
   }
 }
