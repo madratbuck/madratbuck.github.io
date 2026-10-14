@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T13:47:48Z",
+  "updated_at": "2026-10-14T18:41:08Z",
   "shopify": {
     "sessions_30d": 817,
     "conversion_rate_30d": 0.0,
@@ -173,7 +173,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-14T13:47:48Z",
+    "last_check_at": "2026-10-14T18:41:08Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -208,9 +208,23 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 1,
-    "total_30d": 48,
+    "unread_count": 2,
+    "total_30d": 50,
     "messages": [
+      {
+        "date": "2026-10-14T18:03:48Z",
+        "source": "Customer",
+        "subject": "Crown Stitch holiday shipping costs",
+        "snippet": "Hey there, Black Friday is weeks away. Carrier costs go up, volume goes up, and drop-off lines get longer. We deliver same-day across the GTA and",
+        "unread": true
+      },
+      {
+        "date": "2026-10-14T17:47:47Z",
+        "source": "Customer",
+        "subject": "The Festive Trend Report is here",
+        "snippet": "See what buyers are searching for this season Etsy (",
+        "unread": true
+      },
       {
         "date": "2026-10-14T13:25:14Z",
         "source": "Customer",
@@ -252,23 +266,9 @@
         "subject": "How top brands hit $13.70 per cart email recipient",
         "snippet": "Plus, what’s new at Klaviyo. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
-      },
-      {
-        "date": "2026-10-09T19:36:48Z",
-        "source": "Customer",
-        "subject": "Help buyers know what to expect 🤝",
-        "snippet": "Set your shop policies and offer great customer service. Etsy (",
-        "unread": true
-      },
-      {
-        "date": "2026-10-09T16:24:40Z",
-        "source": "Customer",
-        "subject": "CrownstitchCA: This week in your shop",
-        "snippet": "Week ending 09th October 2026 Etsy (",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-14T13:47:48Z"
+    "last_check_at": "2026-10-14T18:41:08Z"
   }
 }
