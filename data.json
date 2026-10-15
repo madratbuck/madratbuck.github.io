@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T13:29:42Z",
+  "updated_at": "2026-10-15T18:21:22Z",
   "shopify": {
     "sessions_30d": 774,
     "conversion_rate_30d": 0.0,
@@ -169,7 +169,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-15T13:29:42Z",
+    "last_check_at": "2026-10-15T18:21:22Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -205,8 +205,15 @@
   },
   "mail": {
     "unread_count": 0,
-    "total_30d": 52,
+    "total_30d": 53,
     "messages": [
+      {
+        "date": "2026-10-15T14:11:06Z",
+        "source": "Customer",
+        "subject": "Shoppers are asking AI about you",
+        "snippet": "Plus smarter request timing and Judge.me Email Judge.me October 2026 *********** At a glance *********** ✓Reviews AI can read ✓Rotating social banner",
+        "unread": true
+      },
       {
         "date": "2026-10-15T13:22:44Z",
         "source": "Shopify",
@@ -255,16 +262,9 @@
         "subject": "CrownstitchCA: Start the week",
         "snippet": "Your plan for the week of 12 October 2026 Etsy (",
         "unread": true
-      },
-      {
-        "date": "2026-10-11T23:05:30Z",
-        "source": "Klaviyo",
-        "subject": "[Webinar] Even your best campaign can’t beat the spam folder",
-        "snippet": "Don’t miss Prepare your deliverability strategy for BFCM ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-15T13:29:42Z"
+    "last_check_at": "2026-10-15T18:21:22Z"
   }
 }
