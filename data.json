@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-16T12:33:24Z",
+  "updated_at": "2026-10-16T17:29:35Z",
   "shopify": {
-    "sessions_30d": 737,
+    "sessions_30d": 738,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -120,7 +120,7 @@
       },
       {
         "source": "direct",
-        "sessions": 108
+        "sessions": 109
       },
       {
         "source": "unknown",
@@ -169,7 +169,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-16T12:33:24Z",
+    "last_check_at": "2026-10-16T17:29:35Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -204,9 +204,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 0,
-    "total_30d": 53,
+    "unread_count": 1,
+    "total_30d": 54,
     "messages": [
+      {
+        "date": "2026-10-16T12:48:21Z",
+        "source": "Klaviyo",
+        "subject": "Don’t forget to set up MFA for your Klaviyo account",
+        "snippet": "[Klaviyo](https://www.klaviyo.com) Secure your account with MFA Protect your account and data by adding an additional level of security with",
+        "unread": true
+      },
       {
         "date": "2026-10-15T14:11:06Z",
         "source": "Customer",
@@ -255,16 +262,9 @@
         "subject": "Join your first Cyber Specials",
         "snippet": "Get your shop into the season's biggest sale Etsy (",
         "unread": true
-      },
-      {
-        "date": "2026-10-12T16:31:44Z",
-        "source": "Customer",
-        "subject": "CrownstitchCA: Start the week",
-        "snippet": "Your plan for the week of 12 October 2026 Etsy (",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-16T12:33:24Z"
+    "last_check_at": "2026-10-16T17:29:35Z"
   }
 }
