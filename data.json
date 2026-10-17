@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T17:17:42Z",
+  "updated_at": "2026-10-17T20:41:13Z",
   "shopify": {
     "sessions_30d": 708,
     "conversion_rate_30d": 0.0,
@@ -169,7 +169,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-17T17:17:42Z",
+    "last_check_at": "2026-10-17T20:41:13Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -205,8 +205,15 @@
   },
   "mail": {
     "unread_count": 1,
-    "total_30d": 56,
+    "total_30d": 57,
     "messages": [
+      {
+        "date": "2026-10-17T18:14:59Z",
+        "source": "Customer",
+        "subject": "Crown Stitch holiday shipping costs",
+        "snippet": "Hey, wanted to lay out a bit more detail on how this actually works: - Morning pickup directly from your location, no depot drop-off required -",
+        "unread": true
+      },
       {
         "date": "2026-10-17T15:32:43Z",
         "source": "Klaviyo",
@@ -255,16 +262,9 @@
         "subject": "Your weekly listing performance",
         "snippet": "See what’s working and tips to bring in more buyers. Etsy (",
         "unread": true
-      },
-      {
-        "date": "2026-10-14T18:03:48Z",
-        "source": "Customer",
-        "subject": "Crown Stitch holiday shipping costs",
-        "snippet": "Hey there, Black Friday is weeks away. Carrier costs go up, volume goes up, and drop-off lines get longer. We deliver same-day across the GTA and",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-17T17:17:42Z"
+    "last_check_at": "2026-10-17T20:41:13Z"
   }
 }
