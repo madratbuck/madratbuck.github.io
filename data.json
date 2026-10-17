@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-17T00:32:39Z",
+  "updated_at": "2026-10-17T05:38:45Z",
   "shopify": {
-    "sessions_30d": 738,
+    "sessions_30d": 708,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -116,19 +116,19 @@
     "sessions_by_source_30d": [
       {
         "source": "social",
-        "sessions": 606
+        "sessions": 591
       },
       {
         "source": "direct",
-        "sessions": 109
-      },
-      {
-        "source": "unknown",
-        "sessions": 12
+        "sessions": 98
       },
       {
         "source": "search",
         "sessions": 11
+      },
+      {
+        "source": "unknown",
+        "sessions": 8
       }
     ]
   },
@@ -169,7 +169,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-17T00:32:39Z",
+    "last_check_at": "2026-10-17T05:38:45Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -184,9 +184,9 @@
     "revenue_30d": 0.0,
     "orders_30d": 0,
     "cogs_est_30d": 0.0,
-    "ad_spend_30d": 101.86,
+    "ad_spend_30d": 98.84,
     "payment_fees_est_30d": 0.0,
-    "net_profit_est_30d": -101.86,
+    "net_profit_est_30d": -98.84,
     "by_channel": {
       "shopify": {
         "orders_30d": 0,
@@ -204,9 +204,23 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included)."
   },
   "mail": {
-    "unread_count": 0,
-    "total_30d": 54,
+    "unread_count": 2,
+    "total_30d": 56,
     "messages": [
+      {
+        "date": "2026-10-17T02:50:06Z",
+        "source": "Shopify",
+        "subject": "See how your prices compare",
+        "snippet": "Shopify 96 Customers compare before they buy. See where yours land. ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏",
+        "unread": true
+      },
+      {
+        "date": "2026-10-17T01:46:33Z",
+        "source": "Customer",
+        "subject": "",
+        "snippet": "If I bring 30-40 order to your store in Oct. Can we collab on 2%com? Whatsapp or Google meet call",
+        "unread": true
+      },
       {
         "date": "2026-10-16T12:48:21Z",
         "source": "Klaviyo",
@@ -248,23 +262,9 @@
         "subject": "The Festive Trend Report is here",
         "snippet": "See what buyers are searching for this season Etsy (",
         "unread": true
-      },
-      {
-        "date": "2026-10-14T13:25:14Z",
-        "source": "Customer",
-        "subject": "Integrate Wise Business and Xero today",
-        "snippet": "accounting-sync-em3-xero-new-carla 96 A match made in the app marketplace ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌ ﻿ ͏ ‌",
-        "unread": true
-      },
-      {
-        "date": "2026-10-13T18:30:53Z",
-        "source": "Customer",
-        "subject": "Join your first Cyber Specials",
-        "snippet": "Get your shop into the season's biggest sale Etsy (",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-17T00:32:39Z"
+    "last_check_at": "2026-10-17T05:38:45Z"
   }
 }
