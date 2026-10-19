@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T10:51:45Z",
+  "updated_at": "2026-10-19T17:32:11Z",
   "shopify": {
     "sessions_30d": 660,
     "conversion_rate_30d": 0.0,
@@ -169,7 +169,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-19T10:51:45Z",
+    "last_check_at": "2026-10-19T17:32:11Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -204,9 +204,23 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included). Ad spend uses lifetime spend as a stand-in for last-30-day spend since the 30-day figure couldn't be confirmed this run."
   },
   "mail": {
-    "unread_count": 0,
-    "total_30d": 57,
+    "unread_count": 2,
+    "total_30d": 59,
     "messages": [
+      {
+        "date": "2026-10-19T17:10:38Z",
+        "source": "Customer",
+        "subject": "CrownstitchCA: Start the week",
+        "snippet": "Your plan for the week of 19 October 2026 Etsy (",
+        "unread": true
+      },
+      {
+        "date": "2026-10-19T15:45:07Z",
+        "source": "Customer",
+        "subject": "$35 in CJdropshipping coupons, for Judge.me stores",
+        "snippet": "$35 in CJdropshipping coupons, before Black Friday. Judge.me (",
+        "unread": true
+      },
       {
         "date": "2026-10-18T23:01:51Z",
         "source": "Klaviyo",
@@ -248,23 +262,9 @@
         "subject": "Don’t forget to set up MFA for your Klaviyo account",
         "snippet": "[Klaviyo](https://www.klaviyo.com) Secure your account with MFA Protect your account and data by adding an additional level of security with",
         "unread": true
-      },
-      {
-        "date": "2026-10-15T14:11:06Z",
-        "source": "Customer",
-        "subject": "Shoppers are asking AI about you",
-        "snippet": "Plus smarter request timing and Judge.me Email Judge.me October 2026 *********** At a glance *********** ✓Reviews AI can read ✓Rotating social banner",
-        "unread": true
-      },
-      {
-        "date": "2026-10-15T13:22:44Z",
-        "source": "Shopify",
-        "subject": "New customer message on October 15, 2026 at 9:22 am",
-        "snippet": "You received a new message from your online store's contact form. Country Code: CA Id: ContactForm-AaGIvY2c4WGFNeFVnY__contact_form_UwiCkQ Name: Mr",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-19T10:51:45Z"
+    "last_check_at": "2026-10-19T17:32:11Z"
   }
 }
