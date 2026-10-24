@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T20:56:47Z",
+  "updated_at": "2026-10-24T23:20:20Z",
   "shopify": {
     "sessions_30d": 489,
     "conversion_rate_30d": 0.0,
@@ -169,7 +169,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-24T20:56:47Z",
+    "last_check_at": "2026-10-24T23:20:20Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -205,8 +205,15 @@
   },
   "mail": {
     "unread_count": 1,
-    "total_30d": 60,
+    "total_30d": 61,
     "messages": [
+      {
+        "date": "2026-10-24T22:37:01Z",
+        "source": "Shopify",
+        "subject": "Don’t forget! 1% back expires December 22, 2026.",
+        "snippet": "Shopify 96 Keep selling, keep earning ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏",
+        "unread": true
+      },
       {
         "date": "2026-10-24T18:41:32Z",
         "source": "Meta",
@@ -255,16 +262,9 @@
         "subject": "Your shop on Facebook and Instagram now has the full shopping experience",
         "snippet": "Facebook for Business Customers can now browse your storefront and collections, and add items to a cart Customers can now browse your whole shop Hi",
         "unread": true
-      },
-      {
-        "date": "2026-10-20T02:38:54Z",
-        "source": "Meta",
-        "subject": "Your shop on Facebook and Instagram now has the full shopping experience",
-        "snippet": "Facebook for Business Customers can now browse your storefront and collections, and add items to a cart Customers can now browse your whole shop Hi",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-24T20:56:47Z"
+    "last_check_at": "2026-10-24T23:20:20Z"
   }
 }
