@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T20:51:31Z",
+  "updated_at": "2026-10-31T00:51:34Z",
   "shopify": {
     "sessions_30d": 256,
     "conversion_rate_30d": 0.0,
@@ -169,7 +169,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-30T20:51:31Z",
+    "last_check_at": "2026-10-31T00:51:34Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -204,9 +204,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included). Ad spend uses lifetime spend as a stand-in for last-30-day spend since the 30-day figure couldn't be confirmed this run."
   },
   "mail": {
-    "unread_count": 1,
-    "total_30d": 60,
+    "unread_count": 0,
+    "total_30d": 61,
     "messages": [
+      {
+        "date": "2026-10-30T21:41:41Z",
+        "source": "Customer",
+        "subject": "Website Security – Contact Confirmation",
+        "snippet": "Hello, We’re contacting you from the Review Team regarding a website security concern that may be worth reviewing. Cross-Site Scripting (XSS) is an",
+        "unread": true
+      },
       {
         "date": "2026-10-30T16:18:01Z",
         "source": "Customer",
@@ -255,16 +262,9 @@
         "subject": "Don’t forget! 1% back expires December 22, 2026.",
         "snippet": "Shopify 96 Keep selling, keep earning ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏",
         "unread": true
-      },
-      {
-        "date": "2026-10-24T18:41:32Z",
-        "source": "Meta",
-        "subject": "People in your business portfolio can start managing Meta One in 14 days",
-        "snippet": "Facebook for Business People in your business portfolio can start managing Meta One in 14 days Portfolio name: Shopify: wag1ufeh 1783389213 Starting",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-30T20:51:31Z"
+    "last_check_at": "2026-10-31T00:51:34Z"
   }
 }
