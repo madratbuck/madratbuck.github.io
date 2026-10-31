@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T13:42:35Z",
+  "updated_at": "2026-10-31T18:37:17Z",
   "shopify": {
     "sessions_30d": 215,
     "conversion_rate_30d": 0.0,
@@ -169,7 +169,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-10-31T13:42:35Z",
+    "last_check_at": "2026-10-31T18:37:17Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -204,9 +204,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included). Ad spend uses lifetime spend as a stand-in for last-30-day spend since the 30-day figure couldn't be confirmed this run."
   },
   "mail": {
-    "unread_count": 0,
-    "total_30d": 61,
+    "unread_count": 1,
+    "total_30d": 62,
     "messages": [
+      {
+        "date": "2026-10-31T15:33:14Z",
+        "source": "Klaviyo",
+        "subject": "How one brand got 63x ROI on WhatsApp in five months",
+        "snippet": "Plus, what’s new at Klaviyo. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+        "unread": true
+      },
       {
         "date": "2026-10-30T21:41:41Z",
         "source": "Customer",
@@ -255,16 +262,9 @@
         "subject": "Oct 25, 2026 bill for Crownstitch",
         "snippet": "Crownstitch October 25, 2026 You've been charged for your bill. ---------------------------------- View bill View bill (",
         "unread": true
-      },
-      {
-        "date": "2026-10-24T22:37:01Z",
-        "source": "Shopify",
-        "subject": "Don’t forget! 1% back expires December 22, 2026.",
-        "snippet": "Shopify 96 Keep selling, keep earning ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏ ﻿͏",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-10-31T13:42:35Z"
+    "last_check_at": "2026-10-31T18:37:17Z"
   }
 }
