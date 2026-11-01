@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T17:09:30Z",
+  "updated_at": "2026-11-01T21:13:49Z",
   "shopify": {
     "sessions_30d": 184,
     "conversion_rate_30d": 0.0,
@@ -165,7 +165,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-11-01T17:09:30Z",
+    "last_check_at": "2026-11-01T21:13:49Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -201,8 +201,15 @@
   },
   "mail": {
     "unread_count": 1,
-    "total_30d": 59,
+    "total_30d": 56,
     "messages": [
+      {
+        "date": "2026-11-01T18:56:05Z",
+        "source": "Customer",
+        "subject": "Your payment of CA$8.40 has been received",
+        "snippet": "Your payment on 01 November, 2026 has been received. Your account balance for CrownstitchCA has been adjusted. Payment Summary CA$8.40 was charged to",
+        "unread": true
+      },
       {
         "date": "2026-11-01T12:49:36Z",
         "source": "Klaviyo",
@@ -251,16 +258,9 @@
         "subject": "CrownstitchCA: Start the week",
         "snippet": "Your plan for the week of 26 October 2026 Etsy (",
         "unread": true
-      },
-      {
-        "date": "2026-10-25T22:58:15Z",
-        "source": "Klaviyo",
-        "subject": "[Webinar] Is your BFCM email design ready for peak?",
-        "snippet": "Don’t miss Design emails that convert ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-11-01T17:09:30Z"
+    "last_check_at": "2026-11-01T21:13:49Z"
   }
 }
