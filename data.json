@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T10:35:52Z",
+  "updated_at": "2026-11-01T17:09:30Z",
   "shopify": {
     "sessions_30d": 184,
     "conversion_rate_30d": 0.0,
@@ -165,7 +165,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-11-01T10:35:52Z",
+    "last_check_at": "2026-11-01T17:09:30Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -200,9 +200,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included). Ad spend uses lifetime spend as a stand-in for last-30-day spend since the 30-day figure couldn't be confirmed this run."
   },
   "mail": {
-    "unread_count": 0,
-    "total_30d": 61,
+    "unread_count": 1,
+    "total_30d": 59,
     "messages": [
+      {
+        "date": "2026-11-01T12:49:36Z",
+        "source": "Klaviyo",
+        "subject": "Your first 60 days on Klaviyo are over",
+        "snippet": "You’ve tried Klaviyo—keep up your momentum ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­",
+        "unread": true
+      },
       {
         "date": "2026-10-31T15:33:14Z",
         "source": "Klaviyo",
@@ -251,16 +258,9 @@
         "subject": "[Webinar] Is your BFCM email design ready for peak?",
         "snippet": "Don’t miss Design emails that convert ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
-      },
-      {
-        "date": "2026-10-25T08:18:34Z",
-        "source": "Shopify",
-        "subject": "Oct 25, 2026 bill for Crownstitch",
-        "snippet": "Crownstitch October 25, 2026 You've been charged for your bill. ---------------------------------- View bill View bill (",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-11-01T10:35:52Z"
+    "last_check_at": "2026-11-01T17:09:30Z"
   }
 }
