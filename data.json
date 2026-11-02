@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T21:13:49Z",
+  "updated_at": "2026-11-02T00:51:47Z",
   "shopify": {
     "sessions_30d": 184,
     "conversion_rate_30d": 0.0,
@@ -165,7 +165,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-11-01T21:13:49Z",
+    "last_check_at": "2026-11-02T00:51:47Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -203,6 +203,13 @@
     "unread_count": 1,
     "total_30d": 56,
     "messages": [
+      {
+        "date": "2026-11-02T00:06:55Z",
+        "source": "Klaviyo",
+        "subject": "[Webinar] Followers come and go. Subscribers stay.",
+        "snippet": "Don’t miss Convert Instagram followers into subscribers before BFCM. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+        "unread": true
+      },
       {
         "date": "2026-11-01T18:56:05Z",
         "source": "Customer",
@@ -251,16 +258,9 @@
         "subject": "Get your listings ready for Cyber",
         "snippet": "Focus on a few updates before the festive rush Etsy (",
         "unread": true
-      },
-      {
-        "date": "2026-10-26T16:50:22Z",
-        "source": "Customer",
-        "subject": "CrownstitchCA: Start the week",
-        "snippet": "Your plan for the week of 26 October 2026 Etsy (",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-11-01T21:13:49Z"
+    "last_check_at": "2026-11-02T00:51:47Z"
   }
 }
