@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T21:56:35Z",
+  "updated_at": "2026-11-05T02:32:03Z",
   "shopify": {
     "sessions_30d": 60,
     "conversion_rate_30d": 0.0,
@@ -165,7 +165,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-11-04T21:56:35Z",
+    "last_check_at": "2026-11-05T02:32:03Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -201,8 +201,15 @@
   },
   "mail": {
     "unread_count": 1,
-    "total_30d": 50,
+    "total_30d": 51,
     "messages": [
+      {
+        "date": "2026-11-05T00:02:17Z",
+        "source": "Shopify",
+        "subject": "Checkout Payment Review",
+        "snippet": "Hello, Could you please confirm that this email address is correct and active for communications regarding your website? Kindly reply to this message",
+        "unread": true
+      },
       {
         "date": "2026-11-04T19:21:22Z",
         "source": "Customer",
@@ -251,16 +258,9 @@
         "subject": "Your first 60 days on Klaviyo are over",
         "snippet": "You’ve tried Klaviyo—keep up your momentum ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­",
         "unread": true
-      },
-      {
-        "date": "2026-10-31T15:33:14Z",
-        "source": "Klaviyo",
-        "subject": "How one brand got 63x ROI on WhatsApp in five months",
-        "snippet": "Plus, what’s new at Klaviyo. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-11-04T21:56:35Z"
+    "last_check_at": "2026-11-05T02:32:03Z"
   }
 }
