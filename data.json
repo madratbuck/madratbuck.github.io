@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T15:43:51Z",
+  "updated_at": "2026-11-07T20:16:44Z",
   "shopify": {
     "sessions_30d": 45,
     "conversion_rate_30d": 0.0,
@@ -165,7 +165,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-11-07T15:43:51Z",
+    "last_check_at": "2026-11-07T20:16:44Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -200,9 +200,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included). Ad spend uses lifetime spend as a stand-in for last-30-day spend since the 30-day figure couldn't be confirmed this run."
   },
   "mail": {
-    "unread_count": 0,
-    "total_30d": 47,
+    "unread_count": 1,
+    "total_30d": 48,
     "messages": [
+      {
+        "date": "2026-11-07T16:33:07Z",
+        "source": "Klaviyo",
+        "subject": "Your welcome series might be two years out of date",
+        "snippet": "Plus, what’s new at Klaviyo. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+        "unread": true
+      },
       {
         "date": "2026-11-05T00:02:17Z",
         "source": "Shopify",
@@ -251,16 +258,9 @@
         "subject": "Your payment of CA$8.40 has been received",
         "snippet": "Your payment on 01 November, 2026 has been received. Your account balance for CrownstitchCA has been adjusted. Payment Summary CA$8.40 was charged to",
         "unread": true
-      },
-      {
-        "date": "2026-11-01T12:49:36Z",
-        "source": "Klaviyo",
-        "subject": "Your first 60 days on Klaviyo are over",
-        "snippet": "You’ve tried Klaviyo—keep up your momentum ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-11-07T15:43:51Z"
+    "last_check_at": "2026-11-07T20:16:44Z"
   }
 }
