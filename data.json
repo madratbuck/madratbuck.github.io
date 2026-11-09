@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T11:43:58Z",
+  "updated_at": "2026-11-09T22:27:51Z",
   "shopify": {
     "sessions_30d": 42,
     "conversion_rate_30d": 0.0,
@@ -161,7 +161,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-11-09T11:43:58Z",
+    "last_check_at": "2026-11-09T22:27:51Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -196,9 +196,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included). Ad spend uses lifetime spend as a stand-in for last-30-day spend since the 30-day figure couldn't be confirmed this run."
   },
   "mail": {
-    "unread_count": 0,
+    "unread_count": 1,
     "total_30d": 46,
     "messages": [
+      {
+        "date": "2026-11-09T17:34:23Z",
+        "source": "Customer",
+        "subject": "CrownstitchCA: Start the week",
+        "snippet": "Your plan for the week of 9 November 2026 Etsy (",
+        "unread": true
+      },
       {
         "date": "2026-11-09T00:10:04Z",
         "source": "Klaviyo",
@@ -247,16 +254,9 @@
         "subject": "Your Meta ads receipt (Account ID: 1041318392007265)",
         "snippet": "Hi Jayce, This is not an invoice Payment summaryAmount billed: CA$8.49 CAD Date range: Oct 4, 2026, 12:00 AM - Oct 5, 2026, 11:59 PM Product type:",
         "unread": true
-      },
-      {
-        "date": "2026-11-02T00:06:55Z",
-        "source": "Klaviyo",
-        "subject": "[Webinar] Followers come and go. Subscribers stay.",
-        "snippet": "Don’t miss Convert Instagram followers into subscribers before BFCM. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-11-09T11:43:58Z"
+    "last_check_at": "2026-11-09T22:27:51Z"
   }
 }
