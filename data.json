@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T16:16:08Z",
+  "updated_at": "2026-11-11T22:49:51Z",
   "shopify": {
     "sessions_30d": 35,
     "conversion_rate_30d": 0.0,
@@ -161,7 +161,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-11-11T16:16:08Z",
+    "last_check_at": "2026-11-11T22:49:51Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -197,8 +197,22 @@
   },
   "mail": {
     "unread_count": 0,
-    "total_30d": 44,
+    "total_30d": 45,
     "messages": [
+      {
+        "date": "2026-11-11T17:14:53Z",
+        "source": "Customer",
+        "subject": "Login from a new device detected on 11 November 2026, 17:13 GMT",
+        "snippet": "96 Communication code: StayGoldenPonyBoy Wise. Your account for the world's money &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;",
+        "unread": true
+      },
+      {
+        "date": "2026-11-11T17:14:13Z",
+        "source": "Customer",
+        "subject": "Login from a new device detected on 11 November 2026, 17:13 GMT",
+        "snippet": "96 Communication code: StayGoldenPonyBoy Wise. Your account for the world's money &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj; &zwnj;",
+        "unread": true
+      },
       {
         "date": "2026-11-09T17:34:23Z",
         "source": "Customer",
@@ -240,23 +254,9 @@
         "subject": "New month, new resources: Your winning BFCM game plan",
         "snippet": "BFCM strategies, trainings, and more to help you get ready. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
-      },
-      {
-        "date": "2026-11-02T17:51:24Z",
-        "source": "Customer",
-        "subject": "CrownstitchCA: Start the week",
-        "snippet": "Your plan for the week of 2 November 2026 Etsy (",
-        "unread": true
-      },
-      {
-        "date": "2026-11-02T08:21:41Z",
-        "source": "Meta",
-        "subject": "Your Meta ads receipt (Account ID: 1041318392007265)",
-        "snippet": "Hi Jayce, This is not an invoice Payment summaryAmount billed: CA$8.49 CAD Date range: Oct 4, 2026, 12:00 AM - Oct 5, 2026, 11:59 PM Product type:",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-11-11T16:16:08Z"
+    "last_check_at": "2026-11-11T22:49:51Z"
   }
 }
