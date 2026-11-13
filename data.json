@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-13T01:53:40Z",
+  "updated_at": "2026-11-13T09:39:16Z",
   "shopify": {
-    "sessions_30d": 34,
+    "sessions_30d": 33,
     "conversion_rate_30d": 0.0,
     "orders_alltime": 0,
     "products": [
@@ -116,7 +116,7 @@
     "sessions_by_source_30d": [
       {
         "source": "direct",
-        "sessions": 33
+        "sessions": 32
       },
       {
         "source": "search",
@@ -161,7 +161,7 @@
     "store_id": 18846548,
     "store_name": "CrownstitchCA",
     "currency": "CAD",
-    "last_check_at": "2026-11-13T01:53:40Z",
+    "last_check_at": "2026-11-13T09:39:16Z",
     "last_check_status": "ok",
     "listings": 16,
     "orders_alltime": 0,
@@ -196,9 +196,16 @@
     "note": "All figures are estimates for a quick read, not bookkeeping-grade numbers: Shopify COGS is orders × the blended per-hat Printful cost (not itemized per order), and Shopify payment fees assume a standard 2.9% + $0.30 CAD per order. Etsy uses the real Printful cost of each order plus estimated Etsy fees (~10.4% + $0.53/order; Offsite Ads not included). Ad spend uses lifetime spend as a stand-in for last-30-day spend since the 30-day figure couldn't be confirmed this run."
   },
   "mail": {
-    "unread_count": 0,
-    "total_30d": 46,
+    "unread_count": 1,
+    "total_30d": 47,
     "messages": [
+      {
+        "date": "2026-11-13T09:37:12Z",
+        "source": "Klaviyo",
+        "subject": "We miss you. Log back into Klaviyo.",
+        "snippet": "Discover all that Klaviyo has to offer ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ KLAVIYO https://www.klaviyo.com/",
+        "unread": true
+      },
       {
         "date": "2026-11-12T14:03:18Z",
         "source": "Klaviyo",
@@ -247,16 +254,9 @@
         "subject": "Your welcome series might be two years out of date",
         "snippet": "Plus, what’s new at Klaviyo. ­ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
         "unread": true
-      },
-      {
-        "date": "2026-11-05T00:02:17Z",
-        "source": "Shopify",
-        "subject": "Checkout Payment Review",
-        "snippet": "Hello, Could you please confirm that this email address is correct and active for communications regarding your website? Kindly reply to this message",
-        "unread": true
       }
     ],
     "last_check_status": "ok",
-    "last_check_at": "2026-11-13T01:53:40Z"
+    "last_check_at": "2026-11-13T09:39:16Z"
   }
 }
